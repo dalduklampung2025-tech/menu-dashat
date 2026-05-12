@@ -214,7 +214,7 @@
       { "nama": "Bawang Putih", "tampilan": " 2-3 siung bawang putih" },
       { "nama": "Cuka", "tampilan": " 2 sdm cuka meja" },
       { "nama": "Kecap", "tampilan": " 2 sdm kecap bango" },
-      { "nama": "Gula", "tampilan": " 2 sdm gula" },
+      { "nama": "Gula Putih", "tampilan": " 2 sdm gula" },
       { "nama": "Penyedap", "tampilan": " 1/2 sdt Royco Ayam" },
       { "nama": "Tepung campuran", "tampilan": "Tepung campuran adonan:" },
       { "nama": "Tepung Tapioka", "tampilan": " 150 gr tepung tapioka" },
@@ -759,7 +759,7 @@
     "ingredients": [
       { "nama": "Ubi", "tampilan": "200 g ubi ungu, kupas, potong dadu 3 cm, kukus setengah matang" },
       { "nama": "Gula Merah", "tampilan": "100 g gula merah, sisir" },
-      { "nama": "Gula Pasir", "tampilan": "2 sdm gula pasir" },
+      { "nama": "Gula Putih", "tampilan": "2 sdm gula pasir/putih" },
       { "nama": "Daun Pandan", "tampilan": "1 lembar daun pandan" },
       { "nama": "Penyedap", "tampilan": "1/4 sdt Royco Kaldu Ayam" },
       { "nama": "Santan", "tampilan": "65 ml santan kental" },
@@ -939,7 +939,7 @@
       { "nama": "Cabai", "tampilan": "2 buah cabai merah, iris tipis" },
       { "nama": "Daun Bawang", "tampilan": "1 batang daun bawang, iris tipis" },
       { "nama": "Penyedap", "tampilan": "1 sdt Royco Kaldu Ayam" },
-      { "nama": "Gula", "tampilan": "½ sdt gula" },
+      { "nama": "Gula Putih", "tampilan": "½ sdt gula" },
       { "nama": "Minyak Wijen", "tampilan": "1 sdt minyak wijen (bila mau)" },
       { "nama": "Minyak Tumis", "tampilan": "1 sdm minyak, untuk menumis" },
       { "nama": "Judul Pelapis", "tampilan": "Adonan Pelapis, aduk rata Di dalam mangkuk:" },
@@ -1280,7 +1280,7 @@
       { "nama": "Kailan", "tampilan": "300 g kailan, blansir (dapat diganti sawi hijau)" },
       { "nama": "Bawang Putih", "tampilan": "2 siung bawang putih, cincang kasar" },
       { "nama": "Saus", "tampilan": "1 sdm Saus Tiram Royco" },
-      { "nama": "Gula", "tampilan": "1 ½ sdt gula" },
+      { "nama": "Gula Putih", "tampilan": "1 ½ sdt gula" },
       { "nama": "Penyedap", "tampilan": "1/4 sdt Royco Kaldu Ayam" },
       { "nama": "Minyak Wijen", "tampilan": "½ sdt minyak wijen" },
       { "nama": "Air", "tampilan": "50 ml air" },
@@ -1464,7 +1464,7 @@
     "image": "assets/bola-ubi.png",
     "ingredients": [
       { "nama": "Ubi", "tampilan": "350 g ubi jalar merah, kukus hingga matang, kupas, haluskan" },
-      { "nama": "Gula Halus", "tampilan": "80 g gula halus" },
+      { "nama": "Gula Putih", "tampilan": "80 g gula halus" },
       { "nama": "Tepung Tapioka", "tampilan": "80 g tepung tapioka" },
       { "nama": "Tepung Maizena", "tampilan": "30 g tepung maizena" },
       { "nama": "Baking Powder", "tampilan": "½ sdt baking powder" },
@@ -1672,7 +1672,7 @@
       { "nama": "Cabai Hijau", "tampilan": "2 buah cabai hijau, iris" },
       { "nama": "Kecap Manis", "tampilan": "3 sdm Kecap Manis Bango" },
       { "nama": "Penyedap", "tampilan": "½ sdt Royco Kaldu Ayam" },
-      { "nama": "Gula", "tampilan": "½ sdt gula" },
+      { "nama": "Gula Putih", "tampilan": "½ sdt gula" },
       { "nama": "Daun Bawang", "tampilan": "2 batang daun bawang, iris" },
       { "nama": "Minyak Wijen", "tampilan": "1 sdm minyak wijen (opsional)" }
     ],
@@ -1897,7 +1897,7 @@
       { "nama": "Ayam", "tampilan": "2 sdm daging ayam giling" },
       { "nama": "Sayuran", "tampilan": "200 g mix vegetables (wortel, buncis, jagung)" },
       { "nama": "Penyedap", "tampilan": "1 ¼ sdt Royco Kaldu Ayam" },
-      { "nama": "Gula", "tampilan": "¼ sdt gula pasir" },
+      { "nama": "Gula Putih", "tampilan": "¼ sdt gula pasir" },
       { "nama": "Air", "tampilan": "50 ml air" },
       { "nama": "Daun Bawang", "tampilan": "½ batang daun bawang, iris tipis" },
       { "nama": "Tepung Terigu", "tampilan": "2 sdm tepung terigu (untuk pengental isi)" },
@@ -2716,7 +2716,7 @@
       { "nama": "Jagung Manis", "tampilan": "120 g jagung manis, potong" },
       { "nama": "Bawang Merah", "tampilan": "4 butir bawang merah, iris tipis" },
       { "nama": "Daun Salam", "tampilan": "2 lembar daun salam" },
-      { "nama": "Gula Pasir", "tampilan": "2 sdt gula pasir" },
+      { "nama": "Gula Putih", "tampilan": "2 sdt gula pasir" },
       { "nama": "Penyedap", "tampilan": "1 ½ sdt Royco Kaldu Rasa Jamur" },
       { "nama": "Air", "tampilan": "1 L air" }
     ],
@@ -2942,7 +2942,7 @@
       { "nama": "Tepung Beras", "tampilan": "6 sdm tepung beras" },
       { "nama": "Susu UHT", "tampilan": "375 ml susu UHT" },
       { "nama": "Air", "tampilan": "900 ml air" },
-      { "nama": "Gula", "tampilan": "3 sdm gula" },
+      { "nama": "Gula Putih", "tampilan": "3 sdm gula" },
       { "nama": "Santan", "tampilan": "3 sdm santan kental" },
       { "nama": "Labu Kuning", "tampilan": "1 buah labu kuning ukuran sedang" }
     ],
@@ -3355,7 +3355,7 @@
     "ingredients": [
       { "nama": "Jagung Manis", "tampilan": "4 buah jagung manis" },
       { "nama": "Agar-agar", "tampilan": "4 bungkus agar-agar plain" },
-      { "nama": "Gula", "tampilan": "16 sdm gula" },
+      { "nama": "Gula Putih", "tampilan": "16 sdm gula" },
       { "nama": "Susu Kental Manis", "tampilan": "10 sachet SKM putih" },
       { "nama": "Air", "tampilan": "2 liter air" }
     ],
@@ -3452,7 +3452,7 @@
       { "nama": "Pisang Kepok", "tampilan": "12 buah pisang kepok matang" },
       { "nama": "Telur", "tampilan": "2 butir telur, kocok lepas" },
       { "nama": "Santan", "tampilan": "1 gelas santan kental" },
-      { "nama": "Gula Pasir", "tampilan": "3 sdm gula pasir" },
+      { "nama": "Gula Putih", "tampilan": "3 sdm gula putih/pasir" },
       { "nama": "Daun Pisang", "tampilan": "Daun pisang untuk membungkus" }
     ],
     "spices": [
