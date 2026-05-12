@@ -128,7 +128,7 @@
       { "nama": "Penyedap", "tampilan": "1 sdt Royco Kaldu Ayam" },
       { "nama": "Air", "tampilan": "3 sdm air" },
       { "nama": "Daun Jeruk", "tampilan": "1 lembar daun jeruk" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" }
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak goreng, untuk menumis" }
     ],
     "spices": [
       "Gula pasir secukupnya",
@@ -164,7 +164,7 @@
       { "nama": "Tahu", "tampilan": "1 kotak tahu putih, potong dadu" },
       { "nama": "Misoa", "tampilan": "50 g misoa" },
       { "nama": "Bawang Putih", "tampilan": "2 siung bawang putih, memarkan" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak" },
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak goreng" },
       { "nama": "Ebi", "tampilan": "1 sdt ebi" },
       { "nama": "Air", "tampilan": "750 ml air" },
       { "nama": "Penyedap", "tampilan": "1 bungkus Royco Kaldu Ayam" }
@@ -262,7 +262,7 @@
       { "nama": "Penyedap", "tampilan": " 1 sdt Royco Kaldu Ayam" },
       { "nama": "Pala", "tampilan": " 1 sdt pala bubuk" },
       { "nama": "Saus", "tampilan": " 1 sdt Saus Tiram Royco" },
-      { "nama": "Minyak", "tampilan": " 1 sdm minyak, untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": " 1 sdm minyak goreng, untuk menumis" },
       { "nama": "Bumbu halus", "tampilan": "Bumbu, haluskan:" },
       { "nama": "Bawang Merah", "tampilan": " 3 butir bawang merah" },
       { "nama": "Bawang Putih", "tampilan": " 2 siung bawang putih" }
@@ -307,7 +307,7 @@
       { "nama": "Penyedap", "tampilan": "1/2 sdt Royco Kaldu Ayam" },
       { "nama": "Air", "tampilan": "150 ml air" },
       { "nama": "Saus", "tampilan": "2 sdt Royco Saus Tiram" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" }
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak, untuk menumis" }
     ],
     "spices": [
       "Garam dan Gula secukupnya",
@@ -349,7 +349,7 @@
       { "nama": "Mayones", "tampilan": " 1 sdm mayones" },
       { "nama": "Tomat", "tampilan": " ½ buah tomat, iris" },
       { "nama": "Keju", "tampilan": " 1 lembar keju cheddar, belah 2 bagian" },
-      { "nama": "Minyak", "tampilan": " 1 sdm minyak" },
+      { "nama": "Minyak Goreng", "tampilan": " 1 sdm minyak" },
       { "nama": "Saus", "tampilan": "Saus sambal atau saus tomat (pelengkap)" }
 
     ],
@@ -445,7 +445,7 @@
       { "nama": "Kecap", "tampilan": "1 sdm Kecap Manis Bango Light" },
       { "nama": "Penyedap", "tampilan": "¾ sdt Royco Kaldu Ayam" },
       { "nama": "Air", "tampilan": "100 ml air" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" }
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak goreng, untuk menumis" }
     ],
     "spices": [
       "Lengkuas secukupnya (memarkan)",
@@ -490,7 +490,7 @@
       { "nama": "Merica", "tampilan": "¼ sdt merica putih bubuk" },
       { "nama": "Keju", "tampilan": "2 sdm keju cheddar parut" },
       { "nama": "Margarin", "tampilan": "2 sdm margarin, untuk menumis" },
-      { "nama": "Minyak", "tampilan": "Minyak, untuk menggoreng" },
+      { "nama": "Minyak Goreng", "tampilan": "Minyak, untuk menggoreng" },
       { "nama": "Pelapis", "tampilan": "Tepung Pelapis:" },
       { "nama": "Tepung Roti", "tampilan": "100 g tepung roti" },
       { "nama": "Telur", "tampilan": "2 butir telur ayam, kocok lepas" },
@@ -538,7 +538,7 @@
       { "nama": "Daun Bawang", "tampilan": "2 batang daun bawang, iris tipis" },
       { "nama": "Cabai Kecil", "tampilan": "1 buah cabai rawit merah, iris tipis" },
       { "nama": "Penyedap", "tampilan": "1 sdt Royco Kaldu Ayam" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak" },
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak" },
       { "nama": "Saus", "tampilan": "Saus sambal botolan" }
 
     ],
@@ -584,7 +584,7 @@
       { "nama": "Lengkuas", "tampilan": "1 cm lengkuas, iris tipis" },
       { "nama": "Kecap", "tampilan": "3 sdm Kecap Manis Bango" },
       { "nama": "Air", "tampilan": "200 ml air" },
-      { "nama": "Minyak", "tampilan": "3 sdm minyak, untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": "3 sdm minyak goreng, untuk menumis" },
       { "nama": "Saus", "tampilan": "2 sdm Saus tiram" }
     ],
     "spices": [
@@ -669,7 +669,7 @@
       { "nama": "Daun Bawang", "tampilan": "1 batang daun bawang, iris tipis" },
       { "nama": "Bawang Putih", "tampilan": "4 siung bawang putih, parut" },
       { "nama": "Penyedap", "tampilan": "1 sdt Royco Kaldu Ayam" },
-      { "nama": "Minyak", "tampilan": "Minyak, untuk menggoreng" },
+      { "nama": "Minyak Goreng", "tampilan": "Minyak, untuk menggoreng" },
       { "nama": "Putih Telur", "tampilan": "1 putih telur ayam (untuk pelapis)" },
       { "nama": "Tepung Panir", "tampilan": "100 g tepung panir" },
       { "nama": "Saus", "tampilan": "Saus sambal (pelengkap)" }
@@ -720,7 +720,7 @@
       { "nama": "Penyedap", "tampilan": "1 sachet Royco Kaldu Ayam" },
       { "nama": "Daun Bawang", "tampilan": "2 batang daun bawang, iris tipis" },
       { "nama": "Seledri", "tampilan": "1 batang daun seledri, simpulkan" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak, untuk menumis" },
       { "nama": "Air", "tampilan": "1L air" }
     ],
     "spices": [
@@ -803,7 +803,7 @@
       { "nama": "Penyedap", "tampilan": "½ sdt Royco Kaldu Ayam" },
       { "nama": "Bawang Bombay", "tampilan": "½ buah bawang bombay, iris tipis" },
       { "nama": "Tomat", "tampilan": "½ buah tomat, iris memanjang" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak" },
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak" },
       { "nama": "Saus", "tampilan": "Saus sambal (pelengkap)" }
 
     ],
@@ -847,7 +847,7 @@
       { "nama": "Bawang Putih", "tampilan": "2 siung bawang putih, iris tipis" },
       { "nama": "Penyedap", "tampilan": "1 sdt Royco Kaldu Ayam" },
       { "nama": "Air", "tampilan": "200 ml air" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak, untuk menumis" },
       { "nama": "Saus", "tampilan": "1 sdm Royco Saus Tiram" }
     ],
     "spices": [
@@ -891,7 +891,7 @@
       { "nama": "Susu", "tampilan": "200 ml susu" },
       { "nama": "Penyedap", "tampilan": "1 bungkus Royco Kaldu Ayam" },
       { "nama": "Pala", "tampilan": "½ sdt pala bubuk" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak" },
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak" },
       { "nama": "Saus", "tampilan": "Saus sambal (pelengkap)" }
 
     ],
@@ -929,7 +929,7 @@
     "image": "assets/tahu-isi-pedas.png",
     "ingredients": [
       { "nama": "Tahu", "tampilan": "6 buah tahu putih, potong dua melintang, kerat sisinya" },
-      { "nama": "Minyak", "tampilan": "200 ml minyak, untuk menggoreng" },
+      { "nama": "Minyak Goreng", "tampilan": "200 ml minyak, untuk menggoreng" },
       { "nama": "Isian", "tampilan": "[ Isian ]" },
       { "nama": "Bawang Bombay", "tampilan": "¼ buah bawang bombay, cincang halus" },
       { "nama": "Bawang Putih", "tampilan": "3 siung bawang putih, cincang halus" },
@@ -991,7 +991,7 @@
       { "nama": "Penyedap", "tampilan": "1 ¼ sdt Royco Rasa Sapi" },
       { "nama": "Saus", "tampilan": "2 sdm Royco saus tiram" },
       { "nama": "Air", "tampilan": "150ml air" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" }
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak, untuk menumis" }
     ],
     "spices": [
       "Garam dan Gula secukupnya",
@@ -1029,7 +1029,7 @@
     "ingredients": [
       { "nama": "Kentang", "tampilan": "300 gr kentang, tumbuk halus" },
       { "nama": "Ayam", "tampilan": "100 gr ayam cincang" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak untuk menumis" },
       { "nama": "Bawang Merah", "tampilan": "3 siung bawang merah" },
       { "nama": "Bawang Putih", "tampilan": "2 siung bawang putih" },
       { "nama": "Cabai Merah", "tampilan": "50 gr cabe merah, iris" },
@@ -1075,7 +1075,7 @@
     "image": "assets/mendoan-pedas.png",
     "ingredients": [
       { "nama": "Tempe", "tampilan": "1 papan (400 g) tempe, iris" },
-      { "nama": "Minyak", "tampilan": "200 ml minyak, untuk menggoreng" },
+      { "nama": "Minyak Goreng", "tampilan": "200 ml minyak, untuk menggoreng" },
       { "nama": "Judul Pelapis", "tampilan": "Adonan pelapis, aduk hingga rata:" },
       { "nama": "Tepung Terigu", "tampilan": "100 g tepung terigu" },
       { "nama": "Tepung Tapioka", "tampilan": "1 sdm tepung tapioka/sagu" },
@@ -1181,7 +1181,7 @@
       { "nama": "Penyedap", "tampilan": "1/4 sdt Royco Ayam" },
       { "nama": "Saus", "tampilan": "1 sdm saus tiram" },
       { "nama": "Jamur", "tampilan": "60gr Jamur kancing" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak (untuk menumis)" }
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak (untuk menumis)" }
     ],
     "spices": [
       "Garam dan Gula secukupnya",
@@ -1284,7 +1284,7 @@
       { "nama": "Penyedap", "tampilan": "1/4 sdt Royco Kaldu Ayam" },
       { "nama": "Minyak Wijen", "tampilan": "½ sdt minyak wijen" },
       { "nama": "Air", "tampilan": "50 ml air" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" }
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak goreng, untuk menumis" }
     ],
     "spices": [
       "Bawang putih goreng (untuk taburan)",
@@ -1321,7 +1321,7 @@
     "image": "assets/tahu-pletok.png",
     "ingredients": [
       { "nama": "Tahu", "tampilan": "10 buah tahu putih, goreng" },
-      { "nama": "Minyak", "tampilan": "Minyak goreng" },
+      { "nama": "Minyak Goreng", "tampilan": "Minyak goreng" },
       { "nama": "Judul Lapisan", "tampilan": "Lapisan Aci:" },
       { "nama": "Tepung Tapioka", "tampilan": "250 g tepung tapioka" },
       { "nama": "Bawang Putih", "tampilan": "4 siung Bawang putih, haluskan" },
@@ -1376,7 +1376,7 @@
       { "nama": "Putih Telur", "tampilan": "1 butir putih telur (untuk pelapis)" },
       { "nama": "Tepung Terigu", "tampilan": "100 g tepung terigu" },
       { "nama": "Tepung Panir", "tampilan": "50 g tepung panir" },
-      { "nama": "Minyak", "tampilan": "Minyak, untuk menggoreng" },
+      { "nama": "Minyak Goreng", "tampilan": "Minyak, untuk menggoreng" },
       { "nama": "Saus", "tampilan": "Saus sambal atau mayones (pelengkap)" }
 
     ],
@@ -1425,7 +1425,7 @@
       { "nama": "Penyedap", "tampilan": "1 sachet Royco Kaldu Ayam" },
       { "nama": "Daun Bawang", "tampilan": "2 batang daun bawang, iris tipis" },
       { "nama": "Seledri", "tampilan": "1 batang daun seledri, simpulkan" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak, untuk menumis" },
       { "nama": "Air", "tampilan": "1 L air" }
     ],
     "spices": [
@@ -1469,7 +1469,7 @@
       { "nama": "Tepung Maizena", "tampilan": "30 g tepung maizena" },
       { "nama": "Baking Powder", "tampilan": "½ sdt baking powder" },
       { "nama": "Penyedap", "tampilan": "½ sdt Royco Kaldu Ayam" },
-      { "nama": "Minyak", "tampilan": "200 ml minyak, untuk menggoreng" }
+      { "nama": "Minyak Goreng", "tampilan": "200 ml minyak, untuk menggoreng" }
     ],
     "spices": [
       "Gula halus tambahan (untuk taburan)",
@@ -1506,7 +1506,7 @@
     "name": "Nugget Ayam Sayuran",
     "image": "assets/nugget-ayam-sayur.png",
     "ingredients": [
-      { "nama": "Minyak", "tampilan": "200 ml minyak, untuk menggoreng" },
+      { "nama": "Minyak Goreng", "tampilan": "200 ml minyak goreng, untuk menggoreng" },
       { "nama": "Judul Nugget", "tampilan": "[ Bahan Nugget ]" },
       { "nama": "Ayam", "tampilan": "125 g daging ayam giling" },
       { "nama": "Tepung Roti", "tampilan": "1 sdm tepung roti panir" },
@@ -1570,7 +1570,7 @@
       { "nama": "Penyedap", "tampilan": "1 sachet Royco Kaldu Ayam" },
       { "nama": "Daun Bawang", "tampilan": "2 batang daun bawang, iris tipis" },
       { "nama": "Seledri", "tampilan": "1 batang daun seledri, simpulkan" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak goreng, untuk menumis" },
       { "nama": "Air", "tampilan": "1 L air" }
     ],
     "spices": [
@@ -1614,13 +1614,13 @@
       { "nama": "Bengkuang", "tampilan": "500 g bengkuang, potong korek api" },
       { "nama": "Kecap Manis", "tampilan": "4 sdm Kecap Bango" },
       { "nama": "Air", "tampilan": "100 ml air" },
-      { "nama": "Minyak Tumis", "tampilan": "2 sdm minyak, untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak goreng, untuk menumis" },
       { "nama": "Judul Isi", "tampilan": "[ Bahan Isi ]" },
       { "nama": "Taoge", "tampilan": "200 gr taoge" },
       { "nama": "Telur", "tampilan": "4 butir telur" },
       { "nama": "Ayam", "tampilan": "100 g dada ayam rebus, suwir" },
       { "nama": "Penyedap", "tampilan": "1 Sachet Royco Ayam" },
-      { "nama": "Minyak", "tampilan": "5 sdm minyak, untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": "5 sdm minyak goreng, untuk menumis" },
       { "nama": "Judul Saus", "tampilan": "[ Bahan Saus ]" },
       { "nama": "Air Saus", "tampilan": "250 ml air" },
       { "nama": "Gula Merah", "tampilan": "50 gr gula merah" },
@@ -1666,7 +1666,7 @@
     "image": "assets/telur-ceplok-kecap.png",
     "ingredients": [
       { "nama": "Telur", "tampilan": "4 butir telur ayam, masak telur mata sapi" },
-      { "nama": "Minyak", "tampilan": "1 sdm minyak, untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": "1 sdm minyak goreng, untuk menumis" },
       { "nama": "Bawang Bombay", "tampilan": "½ buah bawang bombay, potong dadu" },
       { "nama": "Bawang Putih", "tampilan": "2 siung bawang putih, cincang halus" },
       { "nama": "Cabai Hijau", "tampilan": "2 buah cabai hijau, iris" },
@@ -1765,7 +1765,7 @@
       { "nama": "Susu", "tampilan": "50 ml susu cair" },
       { "nama": "Penyedap", "tampilan": "1 sdt Royco Kaldu Ayam" },
       { "nama": "Keju", "tampilan": "50 g keju cheddar parut" },
-      { "nama": "Minyak", "tampilan": "1 sdm minyak" },
+      { "nama": "Minyak Goreng", "tampilan": "1 sdm minyak goreng" },
       { "nama": "Saus", "tampilan": "Saus sambal atau saus tomat (pelengkap)" }
 
     ],
@@ -1810,7 +1810,7 @@
       { "nama": "Penyedap", "tampilan": "½ sdt Royco Kaldu Ayam" },
       { "nama": "Daun Bawang", "tampilan": "1 sdm daun bawang batang iris" },
       { "nama": "Tepung Terigu", "tampilan": "50 g terigu" },
-      { "nama": "Minyak", "tampilan": "150 ml minyak, untuk menggoreng" }
+      { "nama": "Minyak Goreng", "tampilan": "150 ml minyak, untuk menggoreng" }
     ],
     "spices": [
       "Merica bubuk secukupnya",
@@ -1855,7 +1855,7 @@
       { "nama": "Kucai", "tampilan": "3 batang kucai, potong 3 cm" },
       { "nama": "Penyedap", "tampilan": "1 sdt Royco Kaldu Ayam" },
       { "nama": "Air", "tampilan": "100 ml air" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" }
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak goreng, untuk menumis" }
     ],
     "spices": [
       "Gula secukupnya",
@@ -1902,7 +1902,7 @@
       { "nama": "Daun Bawang", "tampilan": "½ batang daun bawang, iris tipis" },
       { "nama": "Tepung Terigu", "tampilan": "2 sdm tepung terigu (untuk pengental isi)" },
       { "nama": "Perekat", "tampilan": "4 sdm air (campuran tepung)" },
-      { "nama": "Minyak Tumis", "tampilan": "1 sdm minyak, untuk menumis" },
+      { "nama": "Minyak goreng", "tampilan": "1 sdm minyak, untuk menumis" },
       { "nama": "Telur Pelapis", "tampilan": "1 butir telur ayam, kocok dengan 1 sdm air" },
       { "nama": "Tepung Panir", "tampilan": "100 g tepung panir" },
       { "nama": "Saus", "tampilan": "Saus sambal (pelengkap)" }
@@ -1954,7 +1954,7 @@
       { "nama": "Penyedap", "tampilan": "1 sachet Royco Kaldu Ayam" },
       { "nama": "Daun Bawang", "tampilan": "2 batang daun bawang, iris tipis" },
       { "nama": "Seledri", "tampilan": "1 batang daun seledri, simpulkan" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak, untuk menumis" },
       { "nama": "Air", "tampilan": "1 L air" }
     ],
     "spices": [
@@ -2002,7 +2002,7 @@
       { "nama": "Bawang Putih", "tampilan": "5 siung bawang putih, parut" },
       { "nama": "Telur", "tampilan": "1 butir telur ayam" },
       { "nama": "Air", "tampilan": "250 ml air" },
-      { "nama": "Minyak", "tampilan": "Minyak secukupnya, untuk menggoreng" },
+      { "nama": "Minyak Goreng", "tampilan": "Minyak secukupnya, untuk menggoreng" },
       { "nama": "Saus", "tampilan": "Sambal Bangkok, untuk cocolan" }
     ],
     "spices": [
@@ -2051,7 +2051,7 @@
       { "nama": "Air", "tampilan": "60 ml air dingin" },
       { "nama": "Tepung Sagu", "tampilan": "100 g tepung sagu" },
       { "nama": "Baking Powder", "tampilan": "½ sdt baking powder" },
-      { "nama": "Minyak", "tampilan": "Minyak secukupnya, untuk menggoreng" },
+      { "nama": "Minyak Goreng", "tampilan": "Minyak secukupnya, untuk menggoreng" },
       { "nama": "Saus", "tampilan": "Saus sambal atau saus tomat (pelengkap)" }
 
     ],
@@ -2095,7 +2095,7 @@
       { "nama": "Jahe", "tampilan": "1 cm jahe, kupas, parut" },
       { "nama": "Jeruk Nipis", "tampilan": "1 sdt air jeruk nipis" },
       { "nama": "Penyedap Ikan", "tampilan": "½ sdt Royco Kaldu Ayam" },
-      { "nama": "Minyak", "tampilan": "Minyak secukupnya, untuk menggoreng" },
+      { "nama": "Minyak Goreng", "tampilan": "Minyak secukupnya, untuk menggoreng" },
       { "nama": "Judul Pelapis Kering", "tampilan": "[ Bahan Pelapis Kering ]" },
       { "nama": "Tepung Terigu Kering", "tampilan": "200 g tepung terigu" },
       { "nama": "Tepung Tapioka", "tampilan": "2 sdm tepung tapioka atau sagu" },
@@ -2107,7 +2107,7 @@
       { "nama": "Penyedap Basah", "tampilan": "¼ sdt Royco Kaldu Ayam" },
       { "nama": "Baking Powder", "tampilan": "½ sdt baking powder" },
       { "nama": "Air Dingin", "tampilan": "100 ml air dingin" },
-      { "nama": "Minyak Campuran", "tampilan": "½ sdm minyak" },
+      { "nama": "Minyak Goreng", "tampilan": "½ sdm minyak" },
       { "nama": "Saus", "tampilan": "Saus sambal (pelengkap)" }
 
     ],
@@ -2152,7 +2152,7 @@
       { "nama": "Tomat", "tampilan": "1 buah tomat, potong" },
       { "nama": "Penyedap", "tampilan": "2 sdt Royco Kaldu Ayam" },
       { "nama": "Air", "tampilan": "50 ml air" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" }
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak, untuk menumis" }
     ],
     "spices": [
       "Merica bubuk secukupnya",
@@ -2198,7 +2198,7 @@
       { "nama": "Seledri", "tampilan": "1 batang daun seledri, iris tipis" },
       { "nama": "Penyedap", "tampilan": "1 sdt Royco Kaldu Ayam" },
       { "nama": "Air", "tampilan": "200 ml air" },
-      { "nama": "Minyak", "tampilan": "Minyak secukupnya, untuk menggoreng" },
+      { "nama": "Minyak Goreng", "tampilan": "Minyak secukupnya, untuk menggoreng" },
       { "nama": "Saus", "tampilan": "Saus sambal jawara (pelengkap)" }
 
     ],
@@ -2248,7 +2248,7 @@
       { "nama": "Penyedap", "tampilan": "1 sachet Royco Kaldu Ayam" },
       { "nama": "Daun Bawang", "tampilan": "2 batang daun bawang, iris tipis" },
       { "nama": "Seledri", "tampilan": "1 batang daun seledri, simpulkan" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak, untuk menumis" },
       { "nama": "Air", "tampilan": "1 L air" }
     ],
     "spices": [
@@ -2295,7 +2295,7 @@
       { "nama": "Bawang Putih", "tampilan": "1 sdm bawang putih goreng, haluskan" },
       { "nama": "Bawang Merah", "tampilan": "1 sdm bawang merah goreng, haluskan" },
       { "nama": "Seledri", "tampilan": "1 batang daun seledri, iris tipis" },
-      { "nama": "Minyak", "tampilan": "200 ml minyak, untuk menggoreng" },
+      { "nama": "Minyak Goreng", "tampilan": "200 ml minyak, untuk menggoreng" },
       { "nama": "Saus", "tampilan": "Saus sambal atau saus tomat (pelengkap)" }
 
     ],
@@ -2344,7 +2344,7 @@
       { "nama": "Air", "tampilan": "100 ml air" },
       { "nama": "Daun Salam", "tampilan": "2 lembar daun salam" },
       { "nama": "Cabai Rawit", "tampilan": "8 buah cabai rawit utuh" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak, untuk menumis" },
       { "nama": "Judul Bumbu", "tampilan": "[ Bumbu Halus ]" },
       { "nama": "Bawang Merah", "tampilan": "6 butir bawang merah" },
       { "nama": "Bawang Putih", "tampilan": "3 siung bawang putih" }
@@ -2394,7 +2394,7 @@
       { "nama": "Air", "tampilan": "650 ml air" },
       { "nama": "Kecap Manis", "tampilan": "60 ml Kecap Manis Bango" },
       { "nama": "Penyedap", "tampilan": "1 sdt Royco Kaldu Ayam" },
-      { "nama": "Minyak", "tampilan": "1 sdm minyak, untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": "1 sdm minyak, untuk menumis" },
       { "nama": "Bawang Merah", "tampilan": "3 butir bawang merah" },
       { "nama": "Bawang Putih", "tampilan": "1 siung bawang putih" }
     ],
@@ -2441,7 +2441,7 @@
       { "nama": "Air", "tampilan": "100 ml air" },
       { "nama": "Tepung Terigu", "tampilan": "100 g tepung terigu" },
       { "nama": "Penyedap", "tampilan": "1 sdt Royco Kaldu Ayam" },
-      { "nama": "Minyak", "tampilan": "Minyak secukupnya, untuk menggoreng" },
+      { "nama": "Minyak Goreng", "tampilan": "Minyak secukupnya, untuk menggoreng" },
       { "nama": "Bawang Putih", "tampilan": "1 siung bawang putih, haluskan" }
     ],
     "spices": [
@@ -2487,7 +2487,7 @@
       { "nama": "Daging Ayam", "tampilan": "50 g daging ayam giling" },
       { "nama": "Keju", "tampilan": "50 g keju cheddar, potong dadu kecil" },
       { "nama": "Penyedap", "tampilan": "½ sdt Royco Kaldu Ayam" },
-      { "nama": "Minyak", "tampilan": "3 sdm minyak, untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": "3 sdm minyak, untuk menumis" },
       { "nama": "Saus", "tampilan": "Saus sambal atau saus tomat (pelengkap)" }
 
     ],
@@ -2535,7 +2535,7 @@
       { "nama": "Kecap Manis", "tampilan": "4 sdm Bango Kecap Manis" },
       { "nama": "Penyedap", "tampilan": "1 sdt Royco Kaldu Ayam" },
       { "nama": "Air", "tampilan": "50 ml air" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" }
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak, untuk menumis" }
     ],
     "spices": [
       "Merica bubuk secukupnya",
@@ -2581,7 +2581,7 @@
       { "nama": "Penyedap", "tampilan": "1 sachet Royco Kaldu Ayam" },
       { "nama": "Garam", "tampilan": "½ sdt garam" },
       { "nama": "Tepung Terigu", "tampilan": "3 sdm tepung terigu" },
-      { "nama": "Minyak", "tampilan": "200 ml minyak, untuk menggoreng" }
+      { "nama": "Minyak Goreng", "tampilan": "200 ml minyak, untuk menggoreng" }
     ],
     "spices": [
       "Merica bubuk secukupnya",
@@ -2628,7 +2628,7 @@
       { "nama": "Daun Bawang", "tampilan": "1 batang daun bawang, iris" },
       { "nama": "Telur", "tampilan": "1 butir telur ayam" },
       { "nama": "Tepung Terigu", "tampilan": "1 sdm tepung terigu" },
-      { "nama": "Minyak Tumis", "tampilan": "3 sdm minyak, untuk menumis" },
+      { "nama": "Minyak Goreng", "tampilan": "3 sdm minyak, untuk menumis" },
       { "nama": "Saus", "tampilan": "Saus sambal atau kuah cuko (pelengkap)" }
 
     ],
@@ -2675,7 +2675,7 @@
       { "nama": "Kecap Manis", "tampilan": "40 g Kecap Manis Bango Light" },
       { "nama": "Penyedap", "tampilan": "½ sdt Royco Kaldu Ayam" },
       { "nama": "Air", "tampilan": "50 ml air" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" }
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyakgoreng, untuk menumis" }
     ],
     "spices": [
       "Merica bubuk secukupnya",
@@ -2763,7 +2763,7 @@
       { "nama": "Telur", "tampilan": "2 butir telur ayam, kocok lepas" },
       { "nama": "Tepung Panir", "tampilan": "100 g tepung panir" },
       { "nama": "Margarin", "tampilan": "2 sdm margarin, untuk menumis" },
-      { "nama": "Minyak", "tampilan": "200 ml minyak, untuk menggoreng" }
+      { "nama": "Minyak Goreng", "tampilan": "200 ml minyak goreng, untuk menggoreng" }
     ],
     "spices": [
       "Merica bubuk secukupnya",
@@ -2808,7 +2808,7 @@
       { "nama": "Penyedap", "tampilan": "1 sdt Royco Kaldu Ayam" },
       { "nama": "Gula Merah", "tampilan": "½ sdt gula merah" },
       { "nama": "Air", "tampilan": "200 ml air" },
-      { "nama": "Minyak", "tampilan": "200 ml minyak, untuk menggoreng" },
+      { "nama": "Minyak Goreng", "tampilan": "200 ml minyak, untuk menggoreng" },
       { "nama": "Bawang Merah", "tampilan": "4 butir bawang merah" },
       { "nama": "Bawang Putih", "tampilan": "2 siung bawang putih" },
       { "nama": "Kunyit Bubuk", "tampilan": "½ sdt kunyit bubuk" },
@@ -2857,7 +2857,7 @@
       { "nama": "Cabai Keriting", "tampilan": "1 buah cabai keriting, iris serong" },
       { "nama": "Penyedap", "tampilan": "1 sdt Royco Kaldu Sapi" },
       { "nama": "Air", "tampilan": "150 ml air" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk menumis" }
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak goreng, untuk menumis" }
     ],
     "spices": [
       "Merica bubuk secukupnya",
@@ -2902,7 +2902,7 @@
       { "nama": "Baking Powder", "tampilan": "1 sdt baking powder" },
       { "nama": "Penyedap", "tampilan": "½ sdt Royco Kaldu Ayam" },
       { "nama": "Keju", "tampilan": "2 lembar keju cheddar, iris tipis" },
-      { "nama": "Minyak", "tampilan": "2 sdm minyak, untuk memasak" },
+      { "nama": "Minyak Goreng", "tampilan": "2 sdm minyak goreng, untuk memasak" },
       { "nama": "Saus", "tampilan": "Saus tomat atau mayones (pelengkap)" }
 
     ],
@@ -3323,7 +3323,7 @@
       { "nama": "Daun Katuk", "tampilan": "50 gr daun katuk" },
       { "nama": "Jagung Manis", "tampilan": "200 gr jagung manis" },
       { "nama": "Brokoli", "tampilan": "200 gr brokoli" },
-      { "nama": "Minyak Sayur", "tampilan": "250 ml minyak sayur" },
+      { "nama": "Minyak Goreng", "tampilan": "250 ml minyak sayur" },
       { "nama": "Buah", "tampilan": "Alpukat atau semangka" }
     ],
     "spices": [
