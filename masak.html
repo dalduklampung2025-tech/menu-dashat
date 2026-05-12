@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Masak</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <!-- PWA -->
   <link rel="manifest" href="manifest.json">
@@ -16,8 +17,8 @@
   </div>
 </div>
 
-<button onclick="history.back()" class="btn-kembali-atas">
-  ⬅ Kembali
+<button onclick="window.location.href='home.html'" class="btn-kembali-atas">
+    ⬅ Kembali
 </button>
 
 <div class="container">
@@ -171,6 +172,6 @@
       .then(() => console.log("Service Worker Registered"));
   }
   </script>
-  
+
 </body>
 </html>
