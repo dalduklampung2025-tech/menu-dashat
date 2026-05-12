@@ -261,13 +261,22 @@ label {
 
 /* ================= TAMPILAN HALAMAN SELAMAT DATANG ================= */
 
+/* =========================
+   RESPONSIVE MOBILE FIX
+========================= */
+
+/* GANTI bagian .landing-bg LAMA menjadi ini */
 .landing-bg {
   background: linear-gradient(to bottom, #f0f9ff, #ffffff);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+
   margin: 0;
+  padding-top: 80px;
+  box-sizing: border-box;
 }
 
 .landing-container {
@@ -706,4 +715,97 @@ html {
     display: block;
     font-weight: bold;
     color: #1a6da3;
+}
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media screen and (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .landing-container,
+  .container,
+  .container-hasil {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logo-landing {
+    width: 150px;
+    height: auto;
+  }
+
+  .welcome-section {
+    margin-top: 15px;
+  }
+
+  .subtitle-highlight {
+    font-size: 20px;
+  }
+
+  .subtitle-text {
+    font-size: 14px;
+  }
+
+  .menu-box {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .btn-menu,
+  .btn-lanjut,
+  .btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .bahan-box {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .ingredient-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .checkbox-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .checkbox-group label {
+    font-size: 14px;
+  }
+
+  .resep-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card-resep-biru {
+    width: 100%;
+  }
+
+  .img-resep {
+    width: 100%;
+    height: auto;
+  }
+
+  .target-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .target-card {
+    width: 100%;
+  }
+
 }
