@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Masak</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="masak-bg">
+
+<div class="bkkbn-header">
+  <div class="header-content">
+    <img src="assets/logo-bkkbn.png" class="logo-bkkbn">
+  </div>
+</div>
+
+<button onclick="history.back()" class="btn-kembali-atas">
+  ⬅ Kembali
+</button>
+
+<div class="container">
+  <h2>Yuk pilih bahan yang kamu punya dan buat menu sehat hari ini!</h2>
+</div>
+
+<div class="bahan-box">
+  <div id="ingredients">
+    <div class="ingredient-container">
+
+      <div class="filter-container">
+  <div class="category-section">
+    <h3>Bahan Utama:</h3>
+    <div class="checkbox-group">
+      <label><input type="checkbox" class="ingredient-cb" value="bayam"> Bayam</label>
+      <label><input type="checkbox" class="ingredient-cb" value="seledri"> Seledri</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kentang"> Kentang</label>
+      <label><input type="checkbox" class="ingredient-cb" value="jagung manis"> Jagung Manis</label>
+      <label><input type="checkbox" class="ingredient-cb" value="jagung putren"> Jagung Putren</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kacang panjang"> Kacang Panjang</label>
+      <label><input type="checkbox" class="ingredient-cb" value="daun bawang"> Daun Bawang</label>
+      <label><input type="checkbox" class="ingredient-cb" value="ubi"> Ubi (Jalar/Kuning/Ungu)</label>
+      <label><input type="checkbox" class="ingredient-cb" value="tomat"> Tomat</label>
+      <label><input type="checkbox" class="ingredient-cb" value="wortel"> Wortel</label>
+      <label><input type="checkbox" class="ingredient-cb" value="sawi"> Sawi/Pakcoy</label>
+      <label><input type="checkbox" class="ingredient-cb" value="buncis"> Buncis</label>
+      <label><input type="checkbox" class="ingredient-cb" value="labu siam"> Labu Siam</label>
+      <label><input type="checkbox" class="ingredient-cb" value="labu kuning"> Labu Kuning</label>
+      <label><input type="checkbox" class="ingredient-cb" value="daun katuk"> Daun Katuk</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kol"> Kol</label>
+      <label><input type="checkbox" class="ingredient-cb" value="brokoli"> Brokoli</label>
+      <label><input type="checkbox" class="ingredient-cb" value="paprika"> Paprika Merah/Hijau</label>
+      <label><input type="checkbox" class="ingredient-cb" value="daun kelor"> Daun Kelor</label>
+      <label><input type="checkbox" class="ingredient-cb" value="taoge"> Taoge/Toge</label>
+      <label><input type="checkbox" class="ingredient-cb" value="pare"> Pare</label>
+      <label><input type="checkbox" class="ingredient-cb" value="jamur tiram"> Jamur Tiram</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kailan"> Kailan</label>
+      <label><input type="checkbox" class="ingredient-cb" value="timun"> Timun</label>
+      <label><input type="checkbox" class="ingredient-cb" value="bengkuang"> Bengkuang</label>
+
+      <label><input type="checkbox" class="ingredient-cb" value="telur"> Telur Ayam</label>
+      <label><input type="checkbox" class="ingredient-cb" value="telur puyuh"> Telur Puyuh</label>
+      <label><input type="checkbox" class="ingredient-cb" value="telur asin"> Telur Asin</label>
+      <label><input type="checkbox" class="ingredient-cb" value="ayam"> Ayam</label>
+      <label><input type="checkbox" class="ingredient-cb" value="udang"> Udang</label>
+      <label><input type="checkbox" class="ingredient-cb" value="daging sapi"> Daging Sapi</label>
+      <label><input type="checkbox" class="ingredient-cb" value="ikan kembung"> Ikan Kembung</label>
+      <label><input type="checkbox" class="ingredient-cb" value="ikan tongkol"> Ikan Tongkol</label>
+      <label><input type="checkbox" class="ingredient-cb" value="ikan nila"> Ikan Nila</label>
+      <label><input type="checkbox" class="ingredient-cb" value="ikan patin"> Ikan Patin</label>
+      <label><input type="checkbox" class="ingredient-cb" value="ikan cakalang"> Ikan Cakalang</label>
+      <label><input type="checkbox" class="ingredient-cb" value="ikan asin"> Ikan Asin</label>
+      <label><input type="checkbox" class="ingredient-cb" value="ikan rebon"> Ikan Rebon/Ebi</label>
+      <label><input type="checkbox" class="ingredient-cb" value="bakso"> Bakso</label>
+      <label><input type="checkbox" class="ingredient-cb" value="sosis"> Sosis</label>
+      <label><input type="checkbox" class="ingredient-cb" value="tahu"> Tahu</label>
+      <label><input type="checkbox" class="ingredient-cb" value="tempe"> Tempe</label>
+
+      <label><input type="checkbox" class="ingredient-cb" value="nasi"> Nasi</label>
+      <label><input type="checkbox" class="ingredient-cb" value="mie"> Mie Telur</label>
+      <label><input type="checkbox" class="ingredient-cb" value="misoa"> Misoa</label>
+      <label><input type="checkbox" class="ingredient-cb" value="soun"> Soun/Sohun</label>
+      <label><input type="checkbox" class="ingredient-cb" value="makaroni"> Makaroni</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kulit lumpia"> Kulit Lumpia</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kulit pangsit"> Kulit Pangsit</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kulit risol"> Kulit Risol</label>
+      <label><input type="checkbox" class="ingredient-cb" value="tepung terigu"> Tepung Terigu</label>
+      <label><input type="checkbox" class="ingredient-cb" value="tepung panir"> Tepung Panir/Roti</label>
+      <label><input type="checkbox" class="ingredient-cb" value="tepung beras"> Tepung Beras</label>
+      <label><input type="checkbox" class="ingredient-cb" value="tepung tapioka"> Tepung Tapioka/Aci</label>
+      <label><input type="checkbox" class="ingredient-cb" value="tepung maizena"> Tepung Maizena</label>
+      <label><input type="checkbox" class="ingredient-cb" value="tepung sagu"> Tepung Sagu</label>
+      <label><input type="checkbox" class="ingredient-cb" value="oat"> Oat</label>
+      <label><input type="checkbox" class="ingredient-cb" value="roti"> Roti Tawar</label>
+
+      <label><input type="checkbox" class="ingredient-cb" value="pisang"> Pisang</label>
+      <label><input type="checkbox" class="ingredient-cb" value="alpukat"> Alpukat</label>
+      <label><input type="checkbox" class="ingredient-cb" value="susu"> Susu (UHT/Cair)</label>
+      <label><input type="checkbox" class="ingredient-cb" value="keju"> Keju</label>
+      <label><input type="checkbox" class="ingredient-cb" value="margarin"> Margarin/Mentega</label>
+      <label><input type="checkbox" class="ingredient-cb" value="mayonaise"> Mayonaise</label>
+      <label><input type="checkbox" class="ingredient-cb" value="agar-agar"> Agar-agar</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kerupuk udang"> Kerupuk Udang</label>
+    </div>
+  </div>
+
+  <div class="category-section">
+    <h3>Perbumbuan:</h3>
+    <div class="checkbox-group">
+      <label><input type="checkbox" class="ingredient-cb" value="bawang merah"> Bawang Merah</label>
+      <label><input type="checkbox" class="ingredient-cb" value="bawang putih"> Bawang Putih</label>
+      <label><input type="checkbox" class="ingredient-cb" value="bawang bombay"> Bawang Bombay</label>
+      <label><input type="checkbox" class="ingredient-cb" value="cabai merah"> Cabai Merah</label>
+      <label><input type="checkbox" class="ingredient-cb" value="cabai rawit"> Cabai Rawit</label>
+      <label><input type="checkbox" class="ingredient-cb" value="cabai hijau"> Cabai Hijau</label>
+      <label><input type="checkbox" class="ingredient-cb" value="cabai keriting"> Cabai Keriting</label>
+      <label><input type="checkbox" class="ingredient-cb" value="jahe"> Jahe</label>
+      <label><input type="checkbox" class="ingredient-cb" value="lengkuas"> Lengkuas/Laos</label>
+      <label><input type="checkbox" class="ingredient-cb" value="serai"> Serai/Sereh</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kunyit"> Kunyit</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kencur"> Kencur</label>
+      <label><input type="checkbox" class="ingredient-cb" value="daun salam"> Daun Salam</label>
+      <label><input type="checkbox" class="ingredient-cb" value="daun jeruk"> Daun Jeruk</label>
+      <label><input type="checkbox" class="ingredient-cb" value="daun pandan"> Daun Pandan</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kemangi"> Kemangi</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kemiri"> Kemiri</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kucai"> Kucai</label>
+
+      <label><input type="checkbox" class="ingredient-cb" value="ketumbar"> Ketumbar</label>
+      <label><input type="checkbox" class="ingredient-cb" value="merica"> Merica/Lada</label>
+      <label><input type="checkbox" class="ingredient-cb" value="pala"> Pala</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kayu manis"> Kayu Manis</label>
+
+      <label><input type="checkbox" class="ingredient-cb" value="garam"> Garam</label>
+      <label><input type="checkbox" class="ingredient-cb" value="gula putih"> Gula Putih/Pasir</label>
+      <label><input type="checkbox" class="ingredient-cb" value="gula merah"> Gula Merah/Aren</label>
+      <label><input type="checkbox" class="ingredient-cb" value="penyedap"> Penyedap/Kaldu</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kecap manis"> Kecap Manis</label>
+      <label><input type="checkbox" class="ingredient-cb" value="kecap asin"> Kecap Asin</label>
+      <label><input type="checkbox" class="ingredient-cb" value="saus"> Saus Tiram/Tomat/Sambal</label>
+      <label><input type="checkbox" class="ingredient-cb" value="santan"> Santan</label>
+      <label><input type="checkbox" class="ingredient-cb" value="jeruk nipis"> Jeruk Nipis</label>
+      <label><input type="checkbox" class="ingredient-cb" value="asam jawa"> Asam Jawa</label>
+      <label><input type="checkbox" class="ingredient-cb" value="cuka"> Cuka</label>
+      <label><input type="checkbox" class="ingredient-cb" value="terasi"> Terasi</label>
+      <label><input type="checkbox" class="ingredient-cb" value="minyak goreng"> Minyak Goreng</label>
+      <label><input type="checkbox" class="ingredient-cb" value="minyak wijen"> Minyak Wijen</label>
+      <label><input type="checkbox" class="ingredient-cb" value="baking powder"> Baking Powder</label>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 30px; text-align: center;">
+  <button id="btn-olah" class="btn" style="display: none;" onclick="olahBahan()">
+    Olah Bahan
+  </button>
+</div>
+
+<div id="results" style="margin: 20px;"></div>
+
+<script src="js/masak.js"></script>
+
+</body>
+</html>
