@@ -1,12 +1,311 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #eef7ff, #ffffff);
+  background: linear-gradient(to bottom, #e3f2fd, #ffffff);
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+/* Logo */
+.logo-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.logo {
+  width: 260px;
+  display: block;
+  margin: auto;
+}
+
+/* Tulisan Inspirasi */
+.logo-text {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-top: 10px;
+}
+
+/* Judul */
+h1 {
+  color: #2c3e50;
+  font-size: 38px;
+  margin-top: 5px;
+}
+
+/* Subtitle */
+.subtitle {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* Menu Box */
+.menu {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 300px;
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Button */
+.menu button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button Masak */
+.menu button:nth-child(1) {
+  background: #4CAF50;
+  color: white;
+}
+
+/* Button Stunting */
+.menu button:nth-child(2) {
+  background: #1b7db9;
+  color: white;
+}
+
+/* Hover */
+.menu button:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  color: gray;
+  font-size: 14px;
+}
+
+/* ================= HALAMAN MASAK ================= */
+
+.masak-bg {
+  background-image: url('../assets/sayur.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.bahan-box {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+label {
+  display: block;
+  margin: 10px;
+  font-size: 18px;
+}
+
+/* Tombol kembali */
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: orange;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ================= HALAMAN STUNTING ================= */
+
+.stunting-bg {
+  background-image: url('../assets/bg gizi.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Card Target */
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.card img {
+  width: 90px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Info Box */
+#infoBox {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px;
+  display: none;
+}
+
+/* ================= HALAMAN DETAIL GIZI ================= */
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  gap: 25px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.detail-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+}
+
+.detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Judul Komponen Gizi */
+.card-header {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #4CAF50;
+  display: block;
+  padding-bottom: 10px;
+}
+
+/* Teks keterangan */
+.detail-card p {
+  text-align: left;
+  margin: 6px 0;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Kotak pangan lokal */
+.pangan-lokal {
+  margin-top: auto;
+  background: #f1f8e9;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #2e7d32;
+  font-style: italic;
+  text-align: left;
+  border-left: 5px solid #4CAF50;
+}
+
+/* ================= WARNA SUBTITLE ================= */
+
+.welcome-section {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+/* Baris Pertama */
+.subtitle-highlight {
+  color: #2E7D32;
+  font-weight: bold;
+  font-size: 19px;
+  margin: 0;
+}
+
+/* Baris Kedua */
+.subtitle-text {
+  color: #1c5e7e;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+/* ================= HALAMAN SELAMAT DATANG ================= */
+
+.landing-bg {
+  background: linear-gradient(to bottom, #f0f9ff, #ffffff);
   min-height: 100vh;
-  overflow-x: hidden;
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin: 0;
+  padding-top: 80px;
   box-sizing: border-box;
+}
+
+.landing-container {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.logo-landing {
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.welcome-text h2 {
+  color: #2c3e50;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.welcome-text p {
+  color: #546e7a;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/* Tombol Lanjut */
+.btn-lanjut {
+  background-color: #1a6da3;
+  color: white;
+  width: 85%;
+  padding: 16px;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-lanjut:hover {
+  background-color: #155a8a;
+  transform: scale(1.03);
 }
 
 /* ================= HEADER BKKBN ================= */
@@ -14,7 +313,7 @@ body {
 .bkkbn-header {
   background-color: #1a6da3;
   width: 100%;
-  height: 70px;
+  height: 60px;
   display: flex;
   align-items: center;
   position: fixed;
@@ -30,505 +329,70 @@ body {
 }
 
 .logo-bkkbn {
-  height: 45px;
-  width: auto;
+  height: 55px;
   display: block;
 }
 
-/* ================= SPLASH SCREEN ================= */
-
-.landing-bg {
-  background: linear-gradient(to bottom, #eef7ff, #ffffff);
-  min-height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
-
-  padding-top: 90px;
-  padding-bottom: 30px;
-
-  box-sizing: border-box;
+body {
+  margin-top: 70px;
 }
 
-.landing-container {
-  width: 100%;
-  max-width: 420px;
-
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* Logo */
-
-.logo-container {
-  text-align: center;
-}
-
-.logo-landing {
-  width: 240px;
-  max-width: 80%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.logo {
-  width: 260px;
-  display: block;
-  margin: auto;
-}
-
-/* Tulisan Inspirasi */
-
-.logo-text {
-  font-size: 20px;
-  color: #2c3e50;
-  margin-top: 10px;
-}
-
-/* ================= WELCOME TEXT ================= */
-
-.welcome-section {
-  margin-bottom: 25px;
-}
-
-.subtitle-highlight {
-  color: #2E7D32;
+.header-text p {
+  color: white !important;
+  margin: 0 !important;
+  font-size: 11px !important;
+  text-align: left !important;
+  line-height: 1.2 !important;
   font-weight: bold;
-  font-size: 34px;
-  margin: 0;
-  line-height: 1.2;
+  text-transform: uppercase;
 }
 
-.subtitle-text {
-  color: #1c5e7e;
-  font-size: 18px;
-  margin-top: 8px;
-  line-height: 1.5;
-}
-
-/* ================= BUTTON ================= */
-
-.btn-lanjut {
-  background-color: #1a6da3;
-  color: white;
-
-  width: 320px;
-  max-width: 90%;
-
-  padding: 16px;
-
-  border: none;
-  border-radius: 50px;
-
-  font-size: 22px;
-  font-weight: bold;
-
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn-lanjut:hover {
-  background-color: #155a8a;
-  transform: scale(1.03);
-}
-
-/* ================= MENU ================= */
-
-.menu {
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  width: 300px;
-  margin: auto;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-.menu button {
-  display: block;
-  width: 100%;
-  padding: 15px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 15px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.menu button:nth-child(1) {
-  background: #4CAF50;
-  color: white;
-}
-
-.menu button:nth-child(2) {
-  background: #1b7db9;
-  color: white;
-}
-
-.menu button:hover {
-  transform: scale(1.05);
-}
-
-/* ================= FOOTER ================= */
-
-.footer {
-  margin-top: 40px;
-  color: gray;
-  font-size: 14px;
-}
-
-/* ================= HALAMAN MASAK ================= */
-
-.masak-bg {
-  background-image: url('../assets/sayur.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
-.container {
-  text-align: center;
-  padding: 20px;
-  position: relative;
-}
-
-/* ================= BAHAN BOX ================= */
-
-.bahan-box {
-  background-color: rgba(103, 137, 161, 0.6);
-  backdrop-filter: blur(10px);
-
-  border-radius: 20px;
-
-  padding: 15px 25px;
-  margin: 10px auto;
-
-  width: 85%;
-  max-width: 950px;
-}
-
-/* ================= CATEGORY ================= */
-
-.category-section h3 {
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 8px;
-  margin-top: 10px;
-  text-align: left;
-}
-
-/* ================= CHECKBOX ================= */
-
-.checkbox-group {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 5px 10px;
-  text-align: left;
-  margin-bottom: 15px;
-}
-
-.checkbox-group label {
-  color: white;
-  font-size: 13px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  white-space: nowrap;
-  line-height: 1.2;
-}
-
-.checkbox-group input[type="checkbox"] {
-  width: 14px;
-  height: 14px;
-  margin-right: 6px;
-  cursor: pointer;
-}
-
-/* ================= BUTTON OLAH ================= */
-
-#btn-olah {
-  background-color: #4CAF50;
-  color: white;
-
-  padding: 12px 40px;
-
-  border: none;
-  border-radius: 50px;
-
-  font-size: 18px;
-  font-weight: bold;
-
-  cursor: pointer;
-
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  transition: 0.3s;
-
-  margin-top: 20px;
-}
-
-#btn-olah:hover {
-  transform: scale(1.05);
-}
-
-/* ================= BUTTON KEMBALI ================= */
-
-.btn-kembali-atas {
-  position: fixed;
-
-  top: 80px;
-  left: 20px;
-
-  background-color: #f28509df;
-  color: white;
-
-  padding: 10px 25px;
-
-  border: none;
-  border-radius: 50px;
-
-  font-size: 14px;
-  font-weight: bold;
-
-  cursor: pointer;
-
-  z-index: 9999;
-
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: 0.3s;
-}
-
-.btn-kembali-atas:hover {
-  transform: scale(1.05);
-}
-
-/* ================= STUNTING ================= */
-
-.stunting-bg {
-  background-image: url('../assets/bg-gizi.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
-/* ================= CARD ================= */
-
-.card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  margin: 20px;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.card img {
-  width: 90px;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-/* ================= INFO BOX ================= */
-
-#infoBox {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  margin: 20px;
-  display: none;
-}
-
-/* ================= DETAIL GRID ================= */
-
-.detail-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 320px);
-  gap: 25px;
-
-  padding: 20px;
-
-  max-width: 1100px;
-
-  margin: 0 auto;
-
-  justify-content: center;
-}
-
-/* ================= DETAIL CARD ================= */
-
-.detail-card {
-  background: white;
-
-  padding: 25px;
-
-  border-radius: 20px;
-
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-
-  text-align: center;
-
-  transition: 0.3s;
-
-  display: flex;
-  flex-direction: column;
-
-  min-height: 280px;
-}
-
-.detail-card:hover {
-  transform: translateY(-5px);
-}
-
-.card-header {
-  font-size: 22px;
-  font-weight: bold;
-  color: #2c3e50;
-
-  margin-bottom: 15px;
-
-  border-bottom: 3px solid #4CAF50;
-
-  padding-bottom: 10px;
-}
-
-.detail-card p {
-  text-align: left;
-  margin: 6px 0;
-  font-size: 15px;
-  color: #333;
-  line-height: 1.5;
-}
-
-.pangan-lokal {
-  margin-top: auto;
-
-  background: #f1f8e9;
-
-  padding: 12px;
-
-  border-radius: 12px;
-
-  font-size: 14px;
-
-  color: #2e7d32;
-
-  font-style: italic;
-
-  text-align: left;
-
-  border-left: 5px solid #4CAF50;
-}
-
-/* ================= HASIL RESEP ================= */
-
-.container-hasil {
-  padding: 80px 20px 40px;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-}
-
-.resep-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  margin-bottom: 40px;
-}
-
-.card-resep-biru {
-  background: #1a6da3;
-  border-radius: 25px;
-  overflow: hidden;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-  color: white;
-}
-
-.img-resep {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-}
-
-.card-isi {
-  padding: 20px;
-}
-
-.card-isi h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  min-height: 50px;
-}
-
-.btn-lihat-resep {
-  background: #cbdceb;
-  color: #1a6da3;
-
-  border: none;
-
-  padding: 10px 20px;
-
-  border-radius: 12px;
-
-  font-weight: bold;
-
-  cursor: pointer;
-
-  width: 100%;
-}
-
-/* ================= RESPONSIVE ================= */
+/* ================= RESPONSIVE MOBILE ================= */
 
 @media screen and (max-width: 768px) {
 
-  .landing-bg {
-    padding-top: 90px;
-    justify-content: flex-start;
+  body {
+    overflow-x: hidden;
   }
 
-  .landing-container {
-    margin-top: 20px;
+  .landing-container,
+  .container,
+  .container-hasil {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
   }
 
   .logo-landing {
-    width: 170px;
+    width: 150px;
+    height: auto;
+  }
+
+  .welcome-section {
+    margin-top: 15px;
   }
 
   .subtitle-highlight {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .subtitle-text {
-    font-size: 16px;
+    font-size: 14px;
   }
 
-  .btn-lanjut {
+  .menu-box {
     width: 90%;
-    font-size: 18px;
-    padding: 14px;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .btn-menu,
+  .btn-lanjut,
+  .btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
   }
 
   .bahan-box {
@@ -537,33 +401,35 @@ body {
   }
 
   .checkbox-group {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 
   .checkbox-group label {
-    font-size: 13px;
-  }
-
-  .card-container {
-    grid-template-columns: 1fr;
-  }
-
-  .detail-grid {
-    grid-template-columns: 1fr;
-    max-width: 350px;
+    font-size: 14px;
   }
 
   .resep-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card-resep-biru {
+    width: 100%;
   }
 
   .img-resep {
-    height: 220px;
+    width: 100%;
+    height: auto;
   }
 
-  .info-gizi-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .target-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .target-card {
+    width: 100%;
   }
 
 }
