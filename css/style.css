@@ -95,37 +95,44 @@ h1 {
 
 
 /* ==========================================================================
-   4. HALAMAN UTAMA / LANDING SCREEN (Bagian yang Diperbaiki Agar Responsif)
+   4. HALAMAN UTAMA / LANDING SCREEN (CENTRALIZED LAYOUT - FIX TENGAH MUTLAK)
    ========================================================================== */
-/* Latar belakang halaman selamat datang (Gradasi biru tipis hanya di atas, sisanya putih penuh) */
+/* Latar belakang halaman selamat datang */
 .landing-bg {
-  /* PERBAIKAN: Gradasi diperketat. Biru muda hanya tipis di atas (0%-20%), 
-     kemudian dipaksa langsung mengalir jadi putih bersih (white) di sisa layarnya */
+  /* Gradasi diperketat agar warna putih mendominasi penuh ke bawah */
   background: linear-gradient(to bottom, #f0f9ff 0%, #ffffff 20%, #ffffff 100%) !important;
   
-  /* Mengunci tinggi minimal agar pas dengan layar gawai Anda */
+  /* Mengunci tinggi agar pas memenuhi 100% sisa area viewport layar gawai */
   min-height: calc(100vh - 60px); 
+  
+  /* Mengaktifkan Flexbox untuk mengontrol perataan arah */
   display: flex;
   flex-direction: column;
   
-  /* PERBAIKAN: Menggunakan space-between agar konten utama tetap di tengah, 
-     tetapi footer (jika ada) otomatis terdorong sopan ke paling bawah */
-  justify-content: space-between; 
+  /* KUNCI 1: Membuat seluruh konten di dalamnya berada tepat di TENGAH VERTIKAL */
+  justify-content: center; 
+  
+  /* KUNCI 2: Membuat seluruh konten berada tepat di TENGAH HORIZONTAL */
   align-items: center;     
+  
   margin: 0;
-  padding: 30px 20px 10px 20px; /* Padding bawah diperkecil agar tidak menimbun space */
+  padding: 20px; /* Padding seimbang di setiap sisi */
   box-sizing: border-box;
+  position: relative; /* Dasar acuan penting jika Anda memiliki teks footer melayang */
 }
 
 /* Pembungkus konten khusus di halaman depan */
 .landing-container {
   text-align: center;
   width: 100%;
-  max-width: 550px; 
-  margin: auto; /* Otomatis menyeimbangkan ruang atas dan bawah */
+  max-width: 550px; /* Batas lebar ideal agar kotak menu tetap terlihat proporsional di PC */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  
+  /* PERBAIKAN: Menghapus margin auto lama yang merusak sistem centering vertikal flexbox */
+  margin: 0; 
 }
 
 /* Ukuran logo khusus pada halaman selamat datang */
@@ -169,7 +176,6 @@ h1 {
   font-size: 15px;
   margin-top: 5px;
 }
-
 
 /* ==========================================================================
    5. MENU BOX & CONTROLS (Kotak Putih Utama & Tombol Pilihan Menu)
@@ -704,16 +710,21 @@ h1 {
   border-left: 5px solid #4CAF50;
 }
 
-
 /* ==========================================================================
    13. FOOTER SECTION (Hak Cipta / Catatan Kaki)
    ========================================================================== */
 .footer {
-  margin-top: 40px;
+  position: absolute; /* Membuat footer melayang di dasar tanpa mendorong menu utama */
+  bottom: 15px;       /* Jarak aman 15px dari paling bawah layar */
+  left: 0;
+  width: 100%;
+  margin: 0;          /* Menghapus margin bawaan agar tidak menendang elemen lain */
   color: gray;
   font-size: 14px;
+  text-align: center;
+  background: transparent;
+  pointer-events: none; /* Memastikan teks footer tidak mengganggu klik di layar HP */
 }
-
 
 /* ==========================================================================
    14. RESPONSIVE MEDIA QUERIES (Optimasi Tampilan Khusus Layar Ponsel/HP)
