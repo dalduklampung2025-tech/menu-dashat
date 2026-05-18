@@ -1,13 +1,12 @@
 /* ==========================================================================
-   1. GLOBAL & BODY SETTINGS (Pengaturan Dasar Aplikasi)
+   1. GLOBAL & BODY SETTINGS (Pengaturan Dasar Aplikasi - FIX KETINGGIAN)
    ========================================================================== */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff; /* Memaksa warna latar dasar mutlak putih bersih */
-  text-align: center;
+/* PERBAIKAN: Memaksa browser membuka ruang setinggi 100% layar perangkat yang digunakan */
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  margin-top: 60px; /* Jarak atas agar konten tidak tertutup oleh navbar fixed BKKBN */
+  background-color: #ffffff; /* Memaksa warna latar dasar mutlak putih bersih */
 }
 
 /* Memastikan transisi scroll halaman terasa halus saat berpindah menu */
@@ -15,6 +14,19 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  
+  /* PERBAIKAN: Mengaktifkan flexbox luar agar pembarian ruang vertikal menjadi akurat */
+  display: flex;
+  flex-direction: column;
+  
+  /* PERBAIKAN: Jarak 60px dipindahkan ke padding-top (bukan margin) agar tidak 
+     merusak kalkulasi rata tengah otomatis milik Flexbox di halaman utama */
+  padding-top: 60px; 
+  box-sizing: border-box; /* Memastikan padding tidak menambah tinggi total body */
+}
 
 /* ==========================================================================
    2. HEADER & NAVIGATION BAR (Komponen Atas Khas BKKBN)
@@ -101,6 +113,12 @@ h1 {
 .landing-bg {
   /* Gradasi diperketat agar warna putih mendominasi penuh ke bawah */
   background: linear-gradient(to bottom, #f0f9ff 0%, #ffffff 20%, #ffffff 100%) !important;
+  
+  /* ========================================================================
+     TAMBAHAN BARIS BARU DI SINI:
+     Memaksa wadah menarik dirinya ke bawah menghabiskan sisa tinggi gawai 
+     ======================================================================== */
+  flex-grow: 1; 
   
   /* Mengunci tinggi agar pas memenuhi 100% sisa area viewport layar gawai */
   min-height: calc(100vh - 60px); 
