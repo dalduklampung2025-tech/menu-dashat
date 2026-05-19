@@ -17,17 +17,15 @@ html {
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #ffffff; /* Mengubah dasar halaman jadi putih bersih */
   
-  /* INI KUNCI RATA TENGAHNYA */
+  /* PERBAIKAN: Mengaktifkan flexbox luar agar pembarian ruang vertikal menjadi akurat */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Menarik konten ke tengah (atas-bawah) */
-  align-items: center;     /* Menarik konten ke tengah (kiri-kanan) */
-  min-height: 100vh;       /* Memaksa putih-putihnya sampai bawah layar */
   
-  padding-top: 60px;       /* Ruang agar tidak tertutup navbar biru di atas */
-  box-sizing: border-box;
+  /* PERBAIKAN: Jarak 60px dipindahkan ke padding-top (bukan margin) agar tidak 
+     merusak kalkulasi rata tengah otomatis milik Flexbox di halaman utama */
+  padding-top: 60px; 
+  box-sizing: border-box; /* Memastikan padding tidak menambah tinggi total body */
 }
 
 /* ==========================================================================
