@@ -110,33 +110,22 @@ h1 {
    4. HALAMAN UTAMA / LANDING SCREEN (CENTRALIZED LAYOUT - FIX TENGAH MUTLAK)
    ========================================================================== */
 /* Latar belakang halaman selamat datang */
+/* Latar belakang halaman selamat datang */
 .landing-bg {
-  /* Gradasi diperketat agar warna putih mendominasi penuh ke bawah */
-  background: linear-gradient(to bottom, #f0f9ff 0%, #ffffff 20%, #ffffff 100%) !important;
+  background: #ffffff !important; /* Memaksa warna putih penuh */
   
-  /* ========================================================================
-     TAMBAHAN BARIS BARU DI SINI:
-     Memaksa wadah menarik dirinya ke bawah menghabiskan sisa tinggi gawai 
-     ======================================================================== */
-  flex-grow: 1; 
-  
-  /* Mengunci tinggi agar pas memenuhi 100% sisa area viewport layar gawai */
+  /* Membuat area ini memenuhi sisa layar agar bisa rata tengah */
   min-height: calc(100vh - 60px); 
-  
-  /* Mengaktifkan Flexbox untuk mengontrol perataan arah */
   display: flex;
   flex-direction: column;
   
-  /* KUNCI 1: Membuat seluruh konten di dalamnya berada tepat di TENGAH VERTIKAL */
+  /* KUNCI RATA TENGAH HANYA UNTUK HALAMAN INI */
   justify-content: center; 
-  
-  /* KUNCI 2: Membuat seluruh konten berada tepat di TENGAH HORIZONTAL */
   align-items: center;     
   
   margin: 0;
-  padding: 20px; /* Padding seimbang di setiap sisi */
+  padding: 20px;
   box-sizing: border-box;
-  position: relative; /* Dasar acuan penting jika Anda memiliki teks footer melayang */
 }
 
 /* Pembungkus konten khusus di halaman depan */
