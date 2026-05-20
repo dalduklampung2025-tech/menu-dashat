@@ -592,7 +592,7 @@ h1 {
    ========================================================================== */
 /* Background bercorak edukasi pencegahan stunting */
 .stunting-bg {
-  background-image: url('../assets/bg\ gizi.png');
+  background-image: url('../assets/bg-gizi.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -819,4 +819,13 @@ h1 {
     grid-template-columns: 1fr;
     max-width: 350px;
   }
+}
+/* ================= FIX SUBMENU STUNTING MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .stunting-bg .container {
+    padding-top: 90px;
+  }
+
 }
