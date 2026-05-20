@@ -112,19 +112,20 @@ h1 {
 /* Latar belakang halaman selamat datang */
 /* Latar belakang halaman selamat datang */
 .landing-bg {
-  background: #ffffff !important; /* Memaksa warna putih penuh */
-  
-  /* Membuat area ini memenuhi sisa layar agar bisa rata tengah */
-  min-height: calc(100vh - 60px); 
+  background: #ffffff !important;
+
+  min-height: calc(100vh - 60px);
+
   display: flex;
   flex-direction: column;
-  
-  /* KUNCI RATA TENGAH HANYA UNTUK HALAMAN INI */
-  justify-content: center; 
-  align-items: center;     
-  
+
+  justify-content: center;
+  align-items: center;
+
   margin: 0;
-  padding: 20px;
+
+  padding: 0; /* UBAH INI */
+
   box-sizing: border-box;
 }
 
@@ -851,20 +852,11 @@ h1 {
   background: rgba(255,255,255,0.95);
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-
-  .stunting-bg {
-    background-size: cover;
-    background-position: center;
-  }
-
-}
-
 @media (max-width: 480px) {
 
-  .landing-container {
-    margin-top: -80px;
+  .landing-bg {
+    padding-top: 0;
+    justify-content: center;
   }
 
 }
