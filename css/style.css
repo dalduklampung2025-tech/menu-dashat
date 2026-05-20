@@ -818,46 +818,45 @@ h1 {
    FIX BACKGROUND HALAMAN STUNTING / GIZI
 ========================================================= */
 
-html,
-body {
-  min-height: 100%;
-}
+/* ===================================================
+   BACKGROUND HALAMAN STUNTING
+=================================================== */
 
-/* Background utama khusus halaman stunting */
-body.stunting-bg {
+.stunting-bg {
   background-image: url('../assets/bg-gizi.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 
+  width: 100%;
   min-height: 100vh;
+
+  padding-top: 90px;
+  padding-bottom: 80px;
 }
 
-/* Semua container dibuat transparan */
+/* Transparan */
 .stunting-bg .container,
-.stunting-bg .detail-grid,
 .stunting-bg .card-container,
+.stunting-bg .detail-grid,
 .stunting-bg .info-section,
 .stunting-bg section {
   background: transparent !important;
 }
 
-/* Jarak bawah */
-.stunting-bg .detail-grid {
-  padding-bottom: 50px;
+/* Card tetap putih */
+.stunting-bg .card,
+.stunting-bg .detail-card,
+.stunting-bg #infoBox {
+  background: rgba(255,255,255,0.95);
 }
 
 /* Mobile */
 @media (max-width: 768px) {
 
-  .stunting-bg .container {
-    padding-top: 90px;
-  }
-
   .stunting-bg {
-    background-attachment: scroll;
     background-size: cover;
+    background-position: center;
   }
 
 }
