@@ -596,6 +596,10 @@ h1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  min-height: 100vh;
 }
 
 /* Grid layout kartu target pencegahan stunting */
