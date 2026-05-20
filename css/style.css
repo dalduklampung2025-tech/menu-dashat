@@ -814,32 +814,50 @@ h1 {
 }
 /* ================= FIX SUBMENU STUNTING MOBILE ================= */
 
+/* =========================================================
+   FIX BACKGROUND HALAMAN STUNTING / GIZI
+========================================================= */
+
+html,
+body {
+  min-height: 100%;
+}
+
+/* Background utama khusus halaman stunting */
+body.stunting-bg {
+  background-image: url('../assets/bg-gizi.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  min-height: 100vh;
+}
+
+/* Semua container dibuat transparan */
+.stunting-bg .container,
+.stunting-bg .detail-grid,
+.stunting-bg .card-container,
+.stunting-bg .info-section,
+.stunting-bg section {
+  background: transparent !important;
+}
+
+/* Jarak bawah */
+.stunting-bg .detail-grid {
+  padding-bottom: 50px;
+}
+
+/* Mobile */
 @media (max-width: 768px) {
 
   .stunting-bg .container {
     padding-top: 90px;
   }
 
-}
-/*==efek scrol bg===*/
-@media (max-width: 768px) {
-
   .stunting-bg {
     background-attachment: scroll;
+    background-size: cover;
   }
 
-}
-html,
-body {
-  min-height: 100%;
-}
-
-body.stunting-bg {
-  background: url('../assets/bg-gizi.png') center center / cover no-repeat fixed !important;
-}
-
-/* Hilangkan background putih */
-.stunting-bg .container,
-.stunting-bg .detail-grid {
-  background: transparent !important;
 }
