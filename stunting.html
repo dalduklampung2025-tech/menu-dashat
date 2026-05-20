@@ -4,48 +4,56 @@
   <title>Informasi Stunting</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+
   <!-- PWA -->
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#4CAF50">
 </head>
 
-<body class="stunting-bg">
+<body>
 
-<!-- HEADER -->
-<div class="bkkbn-header">
-  <div class="header-content">
-    <img src="assets/logo-bkkbn.png" class="logo-bkkbn">
-  </div>
-</div>
+<!-- WRAPPER BACKGROUND -->
+<div class="stunting-bg">
 
-<div class="container">
-  <h2>Target Sasaran</h2>
-
-  <div class="card-container">
-    
-    <div class="card" onclick="window.location.href='isi_informasi/hamil.html'">
-      <img src="assets/icon_hamil.png">
-      <h3>Ibu Hamil</h3>
+  <!-- HEADER -->
+  <div class="bkkbn-header">
+    <div class="header-content">
+      <img src="assets/logo-bkkbn.png" class="logo-bkkbn">
     </div>
-
-    <div class="card" onclick="window.location.href='isi_informasi/balita.html'">
-      <img src="assets/icon_balita.png">
-      <h3>Balita</h3>
-    </div>
-
-    <div class="card" onclick="window.location.href='isi_informasi/menyusui.html'">
-      <img src="assets/icon_menyusui.png">
-      <h3>Ibu Menyusui</h3>
-    </div>
-
-    <div class="card" onclick="window.location.href='isi_informasi/caten.html'">
-      <img src="assets/icon_pernikahan.png">
-      <h3>Calon Pengantin</h3>
-    </div>
-
   </div>
 
-  <button onclick="window.location.href='home.html'" class="btn-kembali-atas">⬅ Kembali</button>
+  <div class="container">
+    <h2>Target Sasaran</h2>
+
+    <div class="card-container">
+      
+      <div class="card" onclick="window.location.href='isi_informasi/hamil.html'">
+        <img src="assets/icon_hamil.png">
+        <h3>Ibu Hamil</h3>
+      </div>
+
+      <div class="card" onclick="window.location.href='isi_informasi/balita.html'">
+        <img src="assets/icon_balita.png">
+        <h3>Balita</h3>
+      </div>
+
+      <div class="card" onclick="window.location.href='isi_informasi/menyusui.html'">
+        <img src="assets/icon_menyusui.png">
+        <h3>Ibu Menyusui</h3>
+      </div>
+
+      <div class="card" onclick="window.location.href='isi_informasi/caten.html'">
+        <img src="assets/icon_pernikahan.png">
+        <h3>Calon Pengantin</h3>
+      </div>
+
+    </div>
+
+    <button onclick="window.location.href='home.html'" class="btn-kembali-atas">
+      ⬅ Kembali
+    </button>
+  </div>
+
 </div>
 
 <script src="js/stunting.js"></script>
