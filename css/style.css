@@ -590,12 +590,6 @@ h1 {
 /* ==========================================================================
    11. STUNTING PREVENTION PAGE (Halaman Edukasi Target Stunting & Balita)
    ========================================================================== */
-/* Background bercorak edukasi pencegahan stunting */
-.stunting-bg {
-  background: url('../assets/bg-gizi.png') center center / cover no-repeat fixed;
-
-  min-height: 100vh;
-}
 /* Grid layout kartu target pencegahan stunting */
 .card-container {
   display: grid;
@@ -841,5 +835,11 @@ body {
 }
 
 body.stunting-bg {
-  background: url('../assets/bg-gizi.png') center center / cover no-repeat fixed;
+  background: url('../assets/bg-gizi.png') center center / cover no-repeat fixed !important;
+}
+
+/* Hilangkan background putih */
+.stunting-bg .container,
+.stunting-bg .detail-grid {
+  background: transparent !important;
 }
