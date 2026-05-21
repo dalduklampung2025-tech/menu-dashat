@@ -927,36 +927,42 @@ body .container > .btn:last-child {
   display: contents; 
 }
 /* ======================================================= */
-/* KODE REVISI KHUSUS: PENGETENGAHAN MENU UTAMA DI HP      */
+/* KODE REVISI JAMINAN: MENGETENGAHKAN MENU UTAMA DI HP    */
 /* ======================================================= */
 
 @media screen and (max-width: 768px) {
   
-  /* 1. Jika halaman memiliki kotak putih (.menu) ATAU tombol lanjut (.btn-lanjut) */
-  /* Kita ubah container-nya menjadi flexbox penuh setinggi layar HP */
-  body:has(.menu) .container,
-  body:has(.btn-lanjut) .container,
-  body:not(:has(.detail-grid)) .container {
+  /* 1. Kita deteksi halaman awal melalui ketiadaan background gizi */
+  /* Jika halaman tidak menggunakan background stunting-bg, kita aktifkan mode Flexbox penuh */
+  body:not(.stunting-bg) {
     display: flex !important;
     flex-direction: column !important;
-    justify-content: center !important; /* Menarik logo, teks, & kotak putih ke tengah vertikal */
-    align-items: center !important;     /* Meratakan semua elemen di tengah horizontal */
-    min-height: calc(100vh - 70px) !important; /* Memakai sisa tinggi layar setelah dikurangi header */
-    padding-top: 20px !important;       /* Matikan padding-top 160px pengganggu kemarin */
-    padding-bottom: 20px !important;
+    justify-content: center !important; /* Memaksa konten turun pas di tengah vertikal (atas-bawah) */
+    align-items: center !important;     /* Memaksa konten pas di tengah horizontal (kiri-kanan) */
+    height: 100vh !important;           /* Mengunci tinggi halaman penuh setinggi layar HP */
+    margin: 0 !important;
+    padding: 0 !important;
     box-sizing: border-box !important;
   }
 
-  /* 2. Memastikan element di dalam container menu utama terpusat secara rapi */
-  body:has(.menu) .container .menu,
-  body:has(.btn-lanjut) .btn-lanjut {
-    margin: 15px auto !important; /* Menyeimbangkan margin atas bawah */
+  /* 2. Menetralkan padding container bawaan khusus di halaman awal ini */
+  body:not(.stunting-bg) .container {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 20px !important;         /* Menghilangkan padding raksasa pengganggu */
+    margin: 0 auto !important;
+    width: 100% !important;
+    height: auto !important;
   }
 
-  /* 3. Kembalikan setingan halaman detail gizi agar TETAP NORMAL (Bisa di-scroll dari atas) */
-  .container:has(.detail-grid) {
-    display: block !important;
-    min-height: auto !important;
-    padding-top: 160px !important; /* Tetap pertahankan ruang untuk tombol kembali melayang */
+  /* 3. Menjaga agar elemen teks petunjuk tetap rapi di tengah */
+  body:not(.stunting-bg) p,
+  body:not(.stunting-bg) h3,
+  body:not(.stunting-bg) .menu {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
