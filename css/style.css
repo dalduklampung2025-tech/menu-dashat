@@ -927,39 +927,36 @@ body .container > .btn:last-child {
   display: contents; 
 }
 /* ======================================================= */
-/* KODE BARU: MEMBUAT HALAMAN MENU UTAMA PAS DI TENGAH HP  */
+/* KODE REVISI KHUSUS: PENGETENGAHAN MENU UTAMA DI HP      */
 /* ======================================================= */
 
-/* Aturan ini hanya berjalan di layar HP (lebar maksimal 768px) */
 @media screen and (max-width: 768px) {
   
-  /* Kita incar halaman yang memiliki tombol "Masak" & "Informasi Gizi" */
-  /* CSS akan otomatis mendeteksi jika halaman ini tidak memiliki .detail-grid */
-  body:not(:has(.detail-grid)) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Memaksa semua konten di dalam body ke tengah vertikal */
-    align-items: center;     /* Memaksa semua konten ke tengah horizontal */
-    height: 100vh;           /* Memakai 100% tinggi layar HP */
-    width: 100vw;
-    box-sizing: border-box;
-    padding-top: 70px;       /* Jarak aman agar tidak tertutup header biru */
-  }
-
-  /* Menyesuaikan container pembungkusnya di halaman utama */
+  /* 1. Jika halaman memiliki kotak putih (.menu) ATAU tombol lanjut (.btn-lanjut) */
+  /* Kita ubah container-nya menjadi flexbox penuh setinggi layar HP */
+  body:has(.menu) .container,
+  body:has(.btn-lanjut) .container,
   body:not(:has(.detail-grid)) .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px !important; /* Hapus padding top besar khusus di halaman ini */
-    margin: 0 auto !important;
-    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important; /* Menarik logo, teks, & kotak putih ke tengah vertikal */
+    align-items: center !important;     /* Meratakan semua elemen di tengah horizontal */
+    min-height: calc(100vh - 70px) !important; /* Memakai sisa tinggi layar setelah dikurangi header */
+    padding-top: 20px !important;       /* Matikan padding-top 160px pengganggu kemarin */
+    padding-bottom: 20px !important;
+    box-sizing: border-box !important;
   }
 
-  /* Memastikan teks petunjuk di bawah logo juga ikut rata tengah */
-  body:not(:has(.detail-grid)) p, 
-  body:not(:has(.detail-grid)) h3 {
-    text-align: center !important;
+  /* 2. Memastikan element di dalam container menu utama terpusat secara rapi */
+  body:has(.menu) .container .menu,
+  body:has(.btn-lanjut) .btn-lanjut {
+    margin: 15px auto !important; /* Menyeimbangkan margin atas bawah */
+  }
+
+  /* 3. Kembalikan setingan halaman detail gizi agar TETAP NORMAL (Bisa di-scroll dari atas) */
+  .container:has(.detail-grid) {
+    display: block !important;
+    min-height: auto !important;
+    padding-top: 160px !important; /* Tetap pertahankan ruang untuk tombol kembali melayang */
   }
 }
