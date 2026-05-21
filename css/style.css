@@ -861,10 +861,10 @@ h1 {
 
 }
 /* ======================================================= */
-/* KODE REVISI KETIGA: MENYATUKAN HEADER & KONTEN (ALAMI)   */
+/* KODE REVISI TERAKHIR: FIXED HEADER & TOMBOL DI BAWAHNYA  */
 /* ======================================================= */
 
-/* 1. Kembalikan halaman agar bisa scroll alami secara penuh */
+/* 1. Kembalikan halaman agar bisa scroll alami */
 html, body {
   margin: 0;
   padding: 0;
@@ -874,53 +874,55 @@ html, body {
   overflow-y: auto; 
 }
 
-/* 2. Kunci gambar latar belakang agar tidak ikut ketarik ke atas */
+/* 2. Kunci gambar latar belakang agar tidak bergerak */
 .stunting-bg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Gambar bg tetap diam di layar */
+  background-attachment: fixed;
 }
 
-/* 3. KONSEP KAMU: Header normal (ikut ke-scroll ke atas bawah) */
+/* 3. KUNCI MATI HEADER: Tetap menetap di paling atas layar */
 .bkkbn-header {
-  position: relative !important; /* Tidak melayang, menyatu dengan konten */
+  position: fixed !important;
   top: 0 !important;
-  left: 0;
-  width: 100%;
-  margin: 0 !important;         /* Hapus semua margin pengganggu */
-  padding: 0;
-  z-index: 1;
+  left: 0 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 9999 !important; /* Standar layer paling tinggi untuk header */
 }
 
-/* 4. MENYELARASKAN TOMBOL KEMBALI AGAR TIDAK MENDORONG HEADER */
-/* Kita paksa posisi tombol agar patuh berada di bawah header biru */
+/* 4. KUNCI MATI TOMBOL KEMBALI: Melayang TEPAT di bawah header biru */
+/* Selektor ini dibuat sangat kuat agar pasti berhasil mengenai tombolmu */
 body .btn, 
-body [onclick="history.back()"],
-body a[href*="menu-dashat"] { 
-  position: absolute !important; /* Melayang relatif terhadap halaman atas */
-  top: 90px !important;          /* Pas ditaruh di bawah header biru */
-  left: 20px !important;
-  margin: 0 !important;          /* Netralkan margin bawaan tombol */
-  z-index: 10 !important;
+body button,
+body .container .btn,
+body [onclick="history.back()"] { 
+  position: fixed !important;
+  top: 90px !important;    /* DIKUNCI DI SINI: Berada di bawah header biru (Tinggi header + 20px) */
+  left: 20px !important;   /* Tetap rapi di sebelah kiri */
+  margin: 0 !important;    /* Buang margin bawaan agar tidak mendorong header */
+  z-index: 9998 !important;/* Layer sedikit di bawah header agar saat di-scroll tidak menabrak logo */
 }
 
-/* 5. Jarak aman konten utama */
+/* 5. BERIKAN JARAK AMAN UNTUK ISI KONTEN (KARTU GIZI) */
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 20px 60px 20px !important; /* Jarak atas disesuaikan agar pas di bawah tombol */
+  margin: 0 auto !important;
+  /* Jarak atas dibuat 160px agar Judul H1 dan Kartu Gizi langsung muncul di bawah tombol melayang */
+  padding: 160px 20px 60px 20px !important; 
   box-sizing: border-box;
 }
 
-/* Merapikan Judul */
+/* Merapikan tulisan judul gizi/target sasaran */
 .container h1 {
   margin-top: 0 !important;
-  margin-bottom: 30px;
+  margin-bottom: 40px !important;
   text-align: center;
 }
 
-/* 6. Menetralisir bungkusan kemarin */
+/* 6. Menetralisir bungkusan lama agar tidak merusak struktur */
 .scrollable-container {
   display: contents; 
 }
