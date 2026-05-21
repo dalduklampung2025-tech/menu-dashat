@@ -861,10 +861,10 @@ h1 {
 
 }
 /* ======================================================= */
-/* KODE REVISI KEDUA: FIX HEADER & TOMBOL KEMBALI MELAYANG  */
+/* KODE REVISI FINAL: PERBAIKAN HEADER UNTUK SEMUA HALAMAN  */
 /* ======================================================= */
 
-/* 1. Mengembalikan halaman utama agar bisa scroll secara alami */
+/* 1. Aturan Dasar Halaman */
 html, body {
   margin: 0;
   padding: 0;
@@ -874,51 +874,53 @@ html, body {
   overflow-y: auto; 
 }
 
-/* 2. Mengunci background agar pas di layar dan tidak ikut bergeser naik */
+/* 2. Mengunci Background */
 .stunting-bg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Ini kunci agar background diam di tempat */
+  background-attachment: fixed;
 }
 
-/* 3. Menstabilkan Header Biru (Bisa naik penuh ke atas tanpa celah) */
+/* 3. Menstabilkan Header Biru di Semua Halaman */
 .bkkbn-header {
-  position: relative; 
+  position: relative; /* Dikembalikan ke standar agar tidak merusak halaman utama */
   width: 100%;
-  z-index: 5;         /* Diturunkan layer-nya agar berada di bawah tombol kembali */
+  z-index: 10;
   margin: 0;
   padding: 0;
 }
 
-/* 4. Memastikan Tombol Kembali Melayangmu Selalu Berada di Lapisan Paling Atas */
-/* Ganti .btn-kembali-utama dengan nama class tombol melayangmu jika berbeda */
-.btn { 
-  z-index: 9999 !important; /* Memaksa tombol tetap melayang di atas header biru */
-}
+/* 4. KHUSUS Halaman Detail Gizi (Hamil, Balita, Menyusui, Pengantin) */
+/* Kita manfaatkan .detail-grid untuk mendeteksi halaman informasi gizi */
 
-/* 5. Menyelaraskan container bawaan agar jaraknya pas */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px 60px 20px; /* Memberi ruang agar konten tidak menabrak header */
-  box-sizing: border-box;
-}
-
-/* Mengatur jarak judul agar rapi di bawah header */
+/* Membuat Judul Gizi pas di tengah dan memiliki jarak ideal */
+.detail-grid ~ .btn,
 .container h1 {
-  margin-top: 20px !important;
-  margin-bottom: 30px;
   text-align: center;
 }
 
-/* Mengatur tombol kembali khusus di dalam sub-menu gizi (bukan yang melayang) */
+/* Mengatur jarak container gizi agar tidak menabrak header */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px 60px 20px;
+  box-sizing: border-box;
+}
+
+/* Memastikan h1 di dalam halaman gizi tidak naik terlalu atas */
+.container h1 {
+  margin-top: 20px !important;
+  margin-bottom: 40px;
+}
+
+/* Mengatur tombol kembali di dalam sub-menu gizi */
 .container .btn {
-  margin-top: 30px;
+  margin-top: 40px;
   display: inline-block;
 }
 
-/* 6. Menetralisir bungkusan kemarin agar halaman hamil/balita/menyusui tidak rusak */
+/* 5. Menetralisir bungkusan lama */
 .scrollable-container {
   display: contents; 
 }
