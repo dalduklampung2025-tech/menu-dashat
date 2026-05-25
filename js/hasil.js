@@ -1,65 +1,185 @@
 // Fungsi utama untuk memuat hasil dari localStorage yang sudah difilter di masak.js
 function loadResults() {
-    // Mengambil data yang sudah diproses oleh fungsi olahBahan() di masak.js
-    const storedData = localStorage.getItem('hasilFilterResep');
-    const container = document.getElementById('resep-grid'); // Sesuaikan dengan ID di hasilresep.html
+
+    // Mengambil data hasil filter dari masak.js
+    const storedData =
+        localStorage.getItem(
+            'hasilFilterResep'
+        );
+
+    const container =
+        document.getElementById(
+            'resep-grid'
+        );
 
     // Validasi jika data tidak ditemukan
     if (!storedData || storedData === '[]') {
+
         if (container) {
+
             container.innerHTML = `
-                <div style="grid-column: 1/-1; text-align: center; padding: 50px;">
-                    <p style="color: #1a6da3; font-weight: bold; font-size: 1.2rem;">
-                        Oops! Tidak ada resep yang cocok.<br>
-                        <span style="font-weight: normal; font-size: 0.9rem;">
-                            Coba pilih bahan lain ya 😊
-                        </span>
+                <div class="card-kosong">
+
+                    <div class="icon-kosong">
+                        🍲
+                    </div>
+
+                    <h2>
+                        Menu Belum Tersedia
+                    </h2>
+
+                    <p>
+                        Oops! Tidak ada resep
+                        yang cocok.
                     </p>
-                </div>`;
+
+                    <p class="subtext">
+                        Coba pilih bahan lain ya 😊
+                    </p>
+
+                </div>
+            `;
         }
+
         return;
     }
 
-    const data = JSON.parse(storedData);
-    tampilkan(data);
+    const data =
+        JSON.parse(storedData);
+
+    // ambil status 100%
+    const ada100 =
+        JSON.parse(
+            localStorage.getItem(
+                'adaResep100'
+            )
+        );
+
+    tampilkan(
+        data,
+        ada100
+    );
 }
 
-// Fungsi untuk merender kartu resep ke dalam HTML
-function tampilkan(data) {
-    const container = document.getElementById('resep-grid');
+// Fungsi untuk merender kartu resep
+function tampilkan(
+    data,
+    ada100
+) {
+
+    const container =
+        document.getElementById(
+            'resep-grid'
+        );
+
     if (!container) return;
 
-    container.innerHTML = data.map(r => `
-        <div class="card-resep-biru">
-            <img src="${r.image || 'assets/sayur.png'}" 
-                 class="img-resep"
-                 onerror="this.src='assets/sayur.png'">
+    container.innerHTML =
 
-            <div class="card-isi">
-                <h3>${r.name}</h3>
-                <p style="font-size:12px; opacity:0.9;">
-                    Kecocokan: ${Math.round(r.score)}%
+        // ================= CARD INFO 100% =================
+        `${!ada100 ? `
+            <div class="card-info-kecocokan">
+
+                <h3>
+                    🍲 Menu 100% Belum Tersedia
+                </h3>
+
+                <p>
+                    Kami belum bisa menyediakan
+                    menu makanan yang
+                    <strong>
+                        100% cocok
+                    </strong>
+                    dengan bahan yang kamu miliki.
                 </p>
 
-                ${r.kurang && r.kurang.length > 0 
-                    ? `<p style="color:#ffd6d6; font-size:12px;">⚠️ Bahan belum lengkap</p>`
-                    : `<p style="color:#c8ffc8; font-size:12px;">✅ Bahan lengkap</p>`
-                }
+                <p>
+                    Tetapi kamu bisa mencoba
+                    menu-menu di bawah ini 😊
+                </p>
 
-                <button class="btn-lihat-resep" onclick="lihatDetail('${r.id}')">
-                    Lihat Resep
-                </button>
             </div>
-        </div>
-    `).join('');
+        ` : ''}
+
+        ` +
+
+        // ================= CARD RESEP =================
+        data.map(r => `
+
+            <div class="card-resep-biru">
+
+                <img
+                    src="${r.image || 'assets/sayur.png'}"
+                    class="img-resep"
+                    onerror="this.src='assets/sayur.png'"
+                >
+
+                <div class="card-isi">
+
+                    <h3>
+                        ${r.name}
+                    </h3>
+
+                    <p style="
+                        font-size:12px;
+                        opacity:0.9;
+                    ">
+                        Kecocokan:
+                        ${Math.round(r.score)}%
+                    </p>
+
+                    ${r.kurang &&
+                    r.kurang.length > 0
+
+                    ? `
+                        <p style="
+                            color:#ffd6d6;
+                            font-size:12px;
+                        ">
+                            ⚠️ Bahan belum lengkap
+                        </p>
+                    `
+
+                    : `
+                        <p style="
+                            color:#c8ffc8;
+                            font-size:12px;
+                        ">
+                            ✅ Bahan lengkap
+                        </p>
+                    `}
+
+                    <button
+                        class="btn-lihat-resep"
+                        onclick="
+                            lihatDetail(
+                                '${r.id}'
+                            )
+                        "
+                    >
+                        Lihat Resep
+                    </button>
+
+                </div>
+            </div>
+
+        `).join('');
 }
 
-// Fungsi untuk berpindah ke halaman detail.html
+// Fungsi berpindah ke detail
 function lihatDetail(id) {
-    // Menyimpan ID spesifik yang dipilih agar bisa dibaca di detail.js
-    localStorage.setItem('detailResepId', id);
-    window.location.href = 'detail.html';
+
+    localStorage.setItem(
+        'detailResepId',
+        id
+    );
+
+    window.location.href =
+        'detail.html';
 }
 
-// Jalankan fungsi saat script dimuat
-document.addEventListener('DOMContentLoaded', loadResults);
+// Jalankan saat halaman dimuat
+document.addEventListener(
+    'DOMContentLoaded',
+    loadResults
+);
