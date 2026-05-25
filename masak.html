@@ -164,41 +164,6 @@
 <div id="results" style="margin: 20px;"></div>
 
 <script src="js/masak.js"></script>
-<script>
-<script>
-<script>
-// ================= URUTKAN BAHAN A-Z =================
-document.addEventListener('DOMContentLoaded', function () {
-
-  const groups =
-    document.querySelectorAll('.checkbox-group');
-
-  groups.forEach(group => {
-
-    const labels =
-      Array.from(
-        group.querySelectorAll('label')
-      );
-
-    labels.sort((a, b) => {
-
-      return a.textContent
-        .trim()
-        .localeCompare(
-          b.textContent.trim(),
-          'id',
-          { sensitivity: 'base' }
-        );
-    });
-
-    labels.forEach(label => {
-      group.appendChild(label);
-    });
-
-  });
-
-});
-</script>
 
 <!-- Service Worker -->
   <script>
