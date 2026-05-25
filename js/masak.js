@@ -47,21 +47,39 @@ async function olahBahan() {
     }
 
     const hasil = recipes.map(resep => {
-      // ✅ PERBAIKAN: Menangani data bahan yang kini berbentuk Objek
+
+      // ✅ Menangani data bahan object/string
       const cocok = resep.ingredients.filter(ing => {
-        // Ambil properti .nama jika ing adalah objek, jika string ambil langsung
-        const namaBahan = typeof ing === 'object' ? ing.nama : ing;
-        return dipilih.includes(namaBahan.toLowerCase());
+        const namaBahan =
+          typeof ing === 'object'
+            ? ing.nama
+            : ing;
+
+        return dipilih.includes(
+          namaBahan.toLowerCase()
+        );
       });
 
       const kurang = resep.ingredients
         .filter(ing => {
-          const namaBahan = typeof ing === 'object' ? ing.nama : ing;
-          return !dipilih.includes(namaBahan.toLowerCase());
-        })
-        .map(ing => typeof ing === 'object' ? ing.nama : ing); // Ambil nama string-nya saja
+          const namaBahan =
+            typeof ing === 'object'
+              ? ing.nama
+              : ing;
 
-      const score = (cocok.length / resep.ingredients.length) * 100;
+          return !dipilih.includes(
+            namaBahan.toLowerCase()
+          );
+        })
+        .map(ing =>
+          typeof ing === 'object'
+            ? ing.nama
+            : ing
+        );
+
+      const score =
+        (cocok.length /
+          resep.ingredients.length) * 100;
 
       return {
         ...resep,
@@ -69,24 +87,43 @@ async function olahBahan() {
         kurang,
         score
       };
+
     })
-    // 🔔 Tetap memunculkan resep selama ada minimal 1 bahan yang cocok
+
+    // 🔔 Tetap tampil jika ada minimal 1 bahan cocok
     .filter(r => r.cocok.length > 0)
+
+    // urut dari score tertinggi
     .sort((a, b) => b.score - a.score);
 
     console.log("HASIL FILTER:", hasil);
 
-    // 🔔 kalau tidak ada yang cocok
+    // ================= CEK ADA 100% ATAU TIDAK =================
+    const adaSeratus = hasil.some(
+      r => r.score === 100
+    );
+
+    // simpan status 100%
+    localStorage.setItem(
+      'adaResep100',
+      JSON.stringify(adaSeratus)
+    );
+
+    // 🔔 kalau tidak ada resep yang cocok sama sekali
     if (hasil.length === 0) {
       alert("Belum ada resep yang cocok 😢");
       return;
     }
 
-    // simpan ke localStorage
-    localStorage.setItem('hasilFilterResep', JSON.stringify(hasil));
+    // simpan hasil resep
+    localStorage.setItem(
+      'hasilFilterResep',
+      JSON.stringify(hasil)
+    );
 
     // pindah halaman
-    window.location.href = 'hasilresep.html';
+    window.location.href =
+      'hasilresep.html';
 
   } catch (error) {
     console.error("ERROR OLAH:", error);
@@ -95,16 +132,45 @@ async function olahBahan() {
 }
 
 // ================= TOMBOL MUNCUL =================
-document.addEventListener('DOMContentLoaded', function () {
-  const tombol = document.getElementById('btn-olah');
-  const checkboxes = document.querySelectorAll('.ingredient-cb');
+document.addEventListener(
+  'DOMContentLoaded',
+  function () {
 
-  if (checkboxes.length > 0 && tombol) {
-    checkboxes.forEach(cb => {
-      cb.addEventListener('change', () => {
-        const ada = Array.from(checkboxes).some(c => c.checked);
-        tombol.style.display = ada ? 'inline-block' : 'none';
+    const tombol =
+      document.getElementById(
+        'btn-olah'
+      );
+
+    const checkboxes =
+      document.querySelectorAll(
+        '.ingredient-cb'
+      );
+
+    if (
+      checkboxes.length > 0 &&
+      tombol
+    ) {
+
+      checkboxes.forEach(cb => {
+
+        cb.addEventListener(
+          'change',
+          () => {
+
+            const ada =
+              Array.from(
+                checkboxes
+              ).some(c => c.checked);
+
+            tombol.style.display =
+              ada
+                ? 'inline-block'
+                : 'none';
+          }
+        );
+
       });
-    });
+
+    }
   }
-});
+);
