@@ -340,7 +340,8 @@ h1 {
 /* Pengaturan grid multikolom untuk layout pilihan checkbox bahan */
 .checkbox-group {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Terbagi menjadi 5 kolom sejajar di desktop */
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: column;
   gap: 5px 10px;
   text-align: left;
   margin-bottom: 15px;
