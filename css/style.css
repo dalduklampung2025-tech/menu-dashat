@@ -816,7 +816,7 @@ h1 {
 /* ================= FIX SUBMENU STUNTING MOBILE ================= */
 
 /* =========================================================
-   FIX BACKGROUND HALAMAN STUNTING / GIZI
+   15 FIX BACKGROUND HALAMAN STUNTING / GIZI
 ========================================================= */
 
 /* ===================================================
@@ -861,7 +861,7 @@ h1 {
 
 }
 /* ======================================================= */
-/* KODE REVISI FINAL: PERBAIKAN TOMBOL MENUMPUK (SELEKTIF)  */
+/* 16. KODE REVISI FINAL: PERBAIKAN TOMBOL MENUMPUK (SELEKTIF)  */
 /* ======================================================= */
 
 /* 1. Reset Dasar Halaman */
@@ -927,7 +927,7 @@ body .container > .btn:last-child {
   display: contents; 
 }
 /* ======================================================= */
-/* FIX PENYEIMBANG: HEADER FIXED KHUSUS LANDING-BG         */
+/* 17. FIX PENYEIMBANG: HEADER FIXED KHUSUS LANDING-BG         */
 /* ======================================================= */
 
 /* 1. Memastikan header biru tetap mengunci mati di paling atas layar */
@@ -954,5 +954,67 @@ body .container > .btn:last-child {
   body.landing-bg {
     height: 100vh !important;
     overflow: hidden; /* Mencegah halaman utama bergulir tipis yang tidak perlu */
+  }
+}
+/* ======================================================= */
+/*   18. CARD INFO MENU 100% BELUM TERSEDIA               */
+/*======================================================= */
+
+.card-info-kecocokan {
+
+  grid-column: 1 / -1;
+
+  background: #fff8e8;
+
+  max-width: 850px;
+  width: 100%;
+
+  margin: 0 auto 30px auto;
+
+  padding: 22px 25px;
+
+  border-radius: 22px;
+
+  border-left: 6px solid #f0ad4e;
+
+  text-align: center;
+
+  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+
+  box-sizing: border-box;
+}
+
+.card-info-kecocokan h3 {
+  color: #c27c00;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.card-info-kecocokan p {
+  color: #555;
+  line-height: 1.7;
+  margin: 6px 0;
+}
+
+/* Responsive HP */
+@media (max-width: 768px) {
+
+  .card-info-kecocokan {
+
+    width: 100%;
+
+    padding: 18px;
+
+    border-radius: 18px;
+
+    margin-bottom: 20px;
+  }
+
+  .card-info-kecocokan h3 {
+    font-size: 18px;
+  }
+
+  .card-info-kecocokan p {
+    font-size: 14px;
   }
 }
