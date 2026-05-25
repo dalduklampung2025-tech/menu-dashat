@@ -1054,6 +1054,7 @@ body .container > .btn:last-child {
 .card-masukan p {
   color: #555;
   line-height: 1.8;
+  text-align: justify;
 }
 
 .btn-masukan {
