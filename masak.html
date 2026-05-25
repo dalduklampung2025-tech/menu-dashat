@@ -165,6 +165,7 @@
 
 <script src="js/masak.js"></script>
   <script>
+<script>
 // ================= SORT A-Z VERTIKAL 5 KOLOM =================
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -173,13 +174,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   groups.forEach(group => {
 
-    // ambil semua label
     let labels =
       Array.from(
         group.querySelectorAll('label')
       );
 
-    // 1. urut A-Z
+    // 1. Urut alfabet
     labels.sort((a, b) =>
       a.textContent
         .trim()
@@ -190,22 +190,21 @@ document.addEventListener('DOMContentLoaded', function () {
         )
     );
 
-    // 2. hitung jumlah row
     const kolom = 5;
     const rows =
       Math.ceil(
         labels.length / kolom
       );
 
-    // 3. susun vertikal
     let hasil = [];
 
-    for (let c = 0; c < kolom; c++) {
+    // ✅ VERTIKAL (ke bawah per kolom)
+    for (let r = 0; r < rows; r++) {
 
-      for (let r = 0; r < rows; r++) {
+      for (let c = 0; c < kolom; c++) {
 
         const index =
-          r * kolom + c;
+          c * rows + r;
 
         if (labels[index]) {
           hasil.push(labels[index]);
@@ -213,7 +212,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
 
-    // 4. tempel ulang
     group.innerHTML = '';
 
     hasil.forEach(label => {
