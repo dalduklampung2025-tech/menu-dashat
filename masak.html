@@ -166,7 +166,8 @@
 <script src="js/masak.js"></script>
 <script>
 <script>
-// ================= URUTKAN BAHAN A-Z 5 KOLOM KE BAWAH =================
+<script>
+// ================= URUTKAN BAHAN A-Z =================
 document.addEventListener('DOMContentLoaded', function () {
 
   const groups =
@@ -174,45 +175,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
   groups.forEach(group => {
 
-    let labels =
+    const labels =
       Array.from(
         group.querySelectorAll('label')
       );
 
-    // 1. urut alfabet A-Z
-    labels.sort((a, b) =>
-      a.textContent
+    labels.sort((a, b) => {
+
+      return a.textContent
         .trim()
         .localeCompare(
           b.textContent.trim(),
           'id',
           { sensitivity: 'base' }
-        )
-    );
+        );
+    });
 
-    // 2. susun ke bawah per kolom
-    const kolom = 5;
-    const rows =
-      Math.ceil(labels.length / kolom);
-
-    let hasil = [];
-
-    for (let r = 0; r < rows; r++) {
-      for (let c = 0; c < kolom; c++) {
-
-        const index =
-          c * rows + r;
-
-        if (labels[index]) {
-          hasil.push(
-            labels[index]
-          );
-        }
-      }
-    }
-
-    // 3. tempel ulang
-    hasil.forEach(label => {
+    labels.forEach(label => {
       group.appendChild(label);
     });
 
