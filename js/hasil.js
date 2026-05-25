@@ -78,18 +78,14 @@ function tampilkan(
 
         // ================= CARD INFO 100% =================
         `${!ada100 ? `
-            <div class="card-info-kecocokan">
+           <div class="card-info-kecocokan">
 
     <h3>
-        🍲 Menu 100% Belum Tersedia
-    </h3>
-
-    <p>
         Kami belum bisa menyediakan
         menu makanan yang
         <strong>100% cocok</strong>
         dengan bahan yang kamu miliki.
-    </p>
+    </h3>
 
     <p>
         Tetapi kamu bisa mencoba
