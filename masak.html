@@ -167,7 +167,8 @@
   <script>
 <script>
 <script>
-// ================= SORT A-Z VERTIKAL 5 KOLOM =================
+<script>
+// ================= URUTKAN BAHAN A-Z =================
 document.addEventListener('DOMContentLoaded', function () {
 
   const groups =
@@ -175,50 +176,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
   groups.forEach(group => {
 
-    // ambil semua label
-    let labels =
+    const labels =
       Array.from(
         group.querySelectorAll('label')
       );
 
-    // 1. urut A-Z
-    labels.sort((a, b) =>
-      a.textContent
+    labels.sort((a, b) => {
+
+      return a.textContent
         .trim()
         .localeCompare(
           b.textContent.trim(),
           'id',
           { sensitivity: 'base' }
-        )
-    );
+        );
+    });
 
-    // 2. hitung jumlah row
-    const kolom = 5;
-    const rows =
-      Math.ceil(
-        labels.length / kolom
-      );
-
-    // 3. susun vertikal
-    let hasil = [];
-
-    for (let c = 0; c < kolom; c++) {
-
-      for (let r = 0; r < rows; r++) {
-
-        const index =
-          r * kolom + c;
-
-        if (labels[index]) {
-          hasil.push(labels[index]);
-        }
-      }
-    }
-
-    // 4. tempel ulang
-    group.innerHTML = '';
-
-    hasil.forEach(label => {
+    labels.forEach(label => {
       group.appendChild(label);
     });
 
