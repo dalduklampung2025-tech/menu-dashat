@@ -110,9 +110,18 @@ h1 {
    4. HALAMAN UTAMA / LANDING SCREEN (CENTRALIZED LAYOUT - FIX TENGAH MUTLAK)
    ========================================================================== */
 /* Latar belakang halaman selamat datang */
-/* Latar belakang halaman selamat datang */
 .landing-bg {
-  background: #ffffff !important;
+
+  background-image:
+    url('assets/logo-awal.png') !important;
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
 
   min-height: calc(100vh - 60px);
 
@@ -124,7 +133,7 @@ h1 {
 
   margin: 0;
 
-  padding: 0; /* UBAH INI */
+  padding: 0;
 
   box-sizing: border-box;
 }
