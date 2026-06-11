@@ -1091,6 +1091,25 @@ body .container > .btn:last-child {
 .btn-masukan:hover {
   background: #155a8a;
 }
+/* ===================================================*/
+/* KHUSUS HALAMAN MASUKAN */
+/*=================================================== */
+
+.masukan-bg {
+
+  justify-content: flex-start !important;
+
+  align-items: stretch !important;
+
+  overflow-y: auto;
+}
+
+.masukan-bg .container {
+
+  padding-top: 120px;
+
+  padding-bottom: 40px;
+}
 /* ===== CATATAN INFORMASI GIZI ===== */
 
 /*.catatan-gizi {
