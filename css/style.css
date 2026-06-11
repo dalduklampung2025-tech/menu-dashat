@@ -1146,3 +1146,40 @@ body .container > .btn:last-child {
 
   color: #1a6da3;
 }
+.garis-pemisah {
+
+  margin: 35px 0;
+
+  border: none;
+
+  border-top: 1px solid #ddd;
+}
+
+/*SURVEI KEPUASAN*/
+.btn-survei {
+
+  background: #2E7D32;
+
+  color: white;
+
+  border: none;
+
+  padding: 14px 28px;
+
+  border-radius: 50px;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  margin-top: 20px;
+
+  transition: 0.3s;
+}
+
+.btn-survei:hover {
+
+  background: #256628;
+}
