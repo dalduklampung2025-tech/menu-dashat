@@ -959,10 +959,15 @@ body .container > .btn:last-child {
 
 /* 3. Mengunci tinggi halaman di smartphone agar pas satu layar */
 @media screen and (max-width: 768px) {
-  body.landing-bg {
+
+  body.landing-bg:not(.masukan-bg) {
+
     height: 100vh !important;
-    overflow: hidden; /* Mencegah halaman utama bergulir tipis yang tidak perlu */
+
+    overflow: hidden;
+
   }
+
 }
 /* ======================================================= */
 /*   18. CARD INFO MENU 100% BELUM TERSEDIA               */
