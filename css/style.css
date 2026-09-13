@@ -1278,9 +1278,8 @@ body .container > .btn:last-child {
 
 /* Bagian Vitamin & Mineral */
 .vit-section {
-  margin-top: auto;
+  margin-top: 0;
   padding-top: 15px;
-  border-top: 1px stroke #e2e8f0;
 }
 
 .vit-title {
