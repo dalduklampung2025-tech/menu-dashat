@@ -1277,9 +1277,9 @@ body .container > .btn:last-child {
 }
 
 /* Bagian Vitamin & Mineral */
-.vit-section {
-  margin-top: 0;
-  padding-top: 15px;
+.akg-gender-card .vit-section {
+  margin-top: 20px !important;
+  padding-top: 0;
 }
 
 .vit-title {
